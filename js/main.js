@@ -8,28 +8,31 @@ var categories = document.getElementById('categories');
 
 var toggle = true;
 
-// var menuSize = '100%';
-// var menuPosition = '-100%';
+var menuSize = '100%';
+var menuPosition = '-100%';
 
-// if (window.innerWidth < '900') {
-// 	menuSize = '20%';
-// 	menuPosition = '-20%';
-// 	categories.style.width = '20%';
-// 	categories.style.right = '-20%';
-// } else {
-// 	var menuSize = '-100%';
-// 	menuPosition = '0';
-// 	categories.style.width = '100%';
-// 	categories.style.right = '-100%';
-// }
 
 function swipeMenu() {
+
+	if (window.innerWidth > '550') {
+		menuSize = '20%';
+		menuPosition = '-20%';
+		categories.style.width = '20%';
+		categories.style.right = '-20%';
+	} else {
+		menuSize = '-100%';
+		menuPosition = '-100%';
+		categories.style.width = '100%';
+		categories.style.right = '-100%';
+}
+
+
 	if (toggle === true) {
 		categories.style.right = '0';
 		categoriesButton.style.webkitTransform = 'rotate(90deg)';
 		toggle = false;
 	} else {
-		categories.style.right = '-100%';
+		categories.style.right = menuPosition;
 		categoriesButton.style.webkitTransform = 'rotate(0deg)';
 		toggle = true;
 	}
