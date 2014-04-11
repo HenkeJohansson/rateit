@@ -200,9 +200,9 @@ MENYN
 #menu #cat-butt {
   float: right;
   color: white;
-  font-size: 46px;
+  font-size: 32px;
   margin-right: 20px;
-  margin-top: 5px;
+  margin-top: 15px;
   cursor: pointer;
   transition: all 0.7s;
 }

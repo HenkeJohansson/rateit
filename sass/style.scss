@@ -6,7 +6,7 @@
 	 	 box-sizing: border-box;
 }
 
-
+// inporterar rutnätet och 
 @import "grid";
 @import "variables";
 
@@ -60,13 +60,13 @@ MENYN
 		padding-top: 5px;
 		float: left;
 	}
-
+	
 	#cat-butt {
 		float: right;
 		color: white;
-		font-size: 46px;
+		font-size: 32px;
 		margin-right: 20px;
-		margin-top: 5px;
+		margin-top: 15px;
 		cursor: pointer;
 		transition: all 0.7s;
 	}
@@ -79,8 +79,7 @@ MENYN
 	height: 40%;
 	width: 100%;
 	position: relative;
-	display: inline-block;
-	// float: left;
+	display: inline-block:
 }
 
 #categories {
