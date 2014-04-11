@@ -8,6 +8,7 @@ var categories = document.getElementById('categories');
 
 var toggle = true;
 
+
 function swipeMenu() {
 	if (toggle === true) {
 		categories.style.right = '0';
