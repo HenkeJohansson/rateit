@@ -25,7 +25,7 @@
 		<div class="bit-3">
 			<h2>Malmö karta</h2>
 			<img src="http://lorempixel.com/g/400/200/" alt="">
-			<p>Lorem #FloydMayweather #TMT #HardWorkAndDedication #Slave ipsum dollar rulez!</p>
+			<p>Lorem #FloydMayweather #TMT #HardWorkAndDedication #Slave ipsum dollar rulez! test</p>
 		</div><!-- .bit-3 -->
 	</div><!-- #lower -->
 	
