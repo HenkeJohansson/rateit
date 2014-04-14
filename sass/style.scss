@@ -21,11 +21,16 @@
   clear: both;
 }
 
-// Grund-stylingen för sidan
+/********************
+MOBILER & FALLBACK
+Grundinställningar för stylen på sidan.
+Denna används när de andra media-querysarna inte matchas.
+Här finns mobilanpassningen.
+*********************/
 @import "base";
 
 /*********************
-TABLET & SMALLER LAPTOPS
+TABLET & MINDRE LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.

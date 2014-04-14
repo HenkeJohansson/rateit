@@ -160,6 +160,12 @@
   clear: both;
 }
 
+/********************
+MOBILER & FALLBACK
+Grundinställningar för stylen på sidan.
+Denna används när de andra media-querysarna inte matchas.
+Här finns mobilanpassningen.
+*********************/
 html, body {
   height: 100%;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -270,7 +276,7 @@ MENYN
 }
 
 /*********************
-TABLET & SMALLER LAPTOPS
+TABLET & MINDRE LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
