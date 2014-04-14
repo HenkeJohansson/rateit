@@ -1,26 +1,4 @@
 
-* {
-	margin: 0;
-	padding: 0;
-	-moz-box-sizing: border-box;
-	 	 box-sizing: border-box;
-}
-
-
-// inporterar rutnätet och 
-@import "grid";
-@import "variables";
-
-.clearfix {
-	clear: both;
-}
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 html, body {
 	height: 100%;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -98,15 +76,25 @@ MENYN
 
 		li {
 			background: #fccfcf;
-			padding-left: 20px;
+			padding-left: 10px;
 			list-style: none;
+			//border-bottom: 2px solid white;
+			margin-bottom: 2px;
 			&:hover {cursor: pointer;}
 			&:hover {background: $rosa;}
 
-			p {
-				font-size: 42px;
+			a {
+				font-size: 22px;
+				text-decoration: none;
+				color: white;
 			}
 		}
+	}
+
+	#botten {
+		position: absolute;
+		bottom: 70px;
+		width: 100%;
 	}
 }
 

@@ -1,40 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="css/style.css">
-	<title>RateIt</title>
-</head>
-<body>
-
-	<div id="menu" class="group">
-		<a href="index.html"><img src="logga.png" alt="RateIt"></a>
-		<p>RateIt</p>
-		<div id="cat-butt" class="group">☰</div>
-	</div><!-- #menu -->
-
-	<div id="map"></div>
-
-	<div id="categories">
-		<ul>
-			<li>
-				<p>item-1</p>
-			</li>
-			<li>
-				<p>item-2</p>
-			</li>
-			<li>
-				<p>item-3</p>
-			</li>
-		</ul>
-	</div><!-- #categories -->
+<?php include "php/header.php"; ?>
 
 	<div id="lower">
 		<div class="bit-3">
 			<h2>Malmö karta</h2>
 			<img src="http://lorempixel.com/g/400/200/" alt="">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, odio, nam possimus unde numquam dignissimos voluptate corporis officiis expedita adipisci enim veniam officia tenetur. Nobis, impedit, eveniet obcaecati libero minus sequi culpa quidem perspiciatis quae</p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, odio, nam possimus unde numquam dignissimos voluptate corporis officiis expedita adipisci enim veniam officia tenetur. Nobis, impedit, eveniet obcaecati libero minus sequi culpa quidem perspiciatis quae</p>
 		</div><!-- .bit-3 -->
 		<div class="bit-3">
 			<h2>Lund karta</h2>

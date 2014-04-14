@@ -233,8 +233,9 @@ MENYN
 }
 #categories ul li {
   background: #fccfcf;
-  padding-left: 20px;
+  padding-left: 10px;
   list-style: none;
+  margin-bottom: 2px;
 }
 #categories ul li:hover {
   cursor: pointer;
@@ -242,8 +243,15 @@ MENYN
 #categories ul li:hover {
   background: #f9bcbe;
 }
-#categories ul li p {
-  font-size: 42px;
+#categories ul li a {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+}
+#categories #botten {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
 }
 
 #lower {
