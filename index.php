@@ -1,6 +1,6 @@
 <?php include "php/header.php"; ?>
 
-	<div id="lower">
+	<div id="container">
 		<div class="bit-3">
 			<h2>Malmö karta</h2>
 			<img src="http://lorempixel.com/g/400/200/" alt="">

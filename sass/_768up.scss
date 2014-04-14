@@ -1,0 +1,34 @@
+/*
+* CSS:en för upplösningar från
+* width: 768px och uppåt.
+*
+*/
+
+// Funkar inte att ändra just nu
+// eftersom javascriptet inte än
+// är anpassat efter fler storlekar
+#categories {
+	//width: 30%;
+}
+
+#container {
+	margin: 0 15px;
+
+	.bit-3 {
+		margin-bottom: 50px;
+		max-height: 350px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			// Skala bilden
+		}
+	}
+	
+	p {
+
+	font-size: 15px;
+	line-height: 1.5;
+	text-align: justify;
+	}
+}

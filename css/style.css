@@ -260,16 +260,16 @@ MENYN
   width: 100%;
 }
 
-#lower {
+#container {
   margin: 0 15px;
 }
-#lower .bit-3 {
+#container .bit-3 {
   margin-bottom: 30px;
 }
-#lower .bit-3 img {
+#container .bit-3 img {
   width: 100%;
 }
-#lower p {
+#container p {
   font-size: 15px;
   line-height: 1.5;
   text-align: justify;
@@ -281,6 +281,29 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
+@media only screen and (min-width: 768px) {
+  /*
+  * CSS:en för upplösningar från
+  * width: 768px och uppåt.
+  *
+  */
+  #container {
+    margin: 0 15px;
+  }
+  #container .bit-3 {
+    margin-bottom: 50px;
+    max-height: 350px;
+    overflow: hidden;
+  }
+  #container .bit-3 img {
+    width: 100%;
+  }
+  #container p {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
 /*********************
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
