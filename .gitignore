@@ -1,7 +1,5 @@
 
-
-*.password.inc.php
-*.test.rtf
+password.inc.php
 
 #################
 ## Eclipse
