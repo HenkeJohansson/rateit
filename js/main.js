@@ -11,9 +11,15 @@ var toggle = true;
 var menuSize = '100%';
 var menuPosition = '-100%';
 
+// testar media-querys i js
+var media = window.matchMedia('(min-width: 800px)');
+
+media.addListener(function(data) {
+	console.log('matches: ' + data.matches);
+});
 
 function swipeMenu() {
-
+	// Sätter bredden på #categories beroende på fönstrets bredd
 	if (window.innerWidth > '550') {
 		menuSize = '20%';
 		menuPosition = '-20%';
@@ -24,9 +30,8 @@ function swipeMenu() {
 		menuPosition = '-100%';
 		categories.style.width = '100%';
 		categories.style.right = '-100%';
-}
-
-
+	}
+	// Funktionen för att visa menyn och sedan gömma den igen
 	if (toggle === true) {
 		categories.style.right = '0';
 		categoriesButton.style.webkitTransform = 'rotate(90deg)';

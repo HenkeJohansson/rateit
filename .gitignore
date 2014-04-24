@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *.password.inc.php
+=======
+*.test.rtf
+>>>>>>> FETCH_HEAD
 
 #################
 ## Eclipse
