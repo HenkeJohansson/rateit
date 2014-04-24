@@ -7,7 +7,7 @@ try {
     $pdo->setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->exec ('SET NAMES "utf8"');
 } catch (Exception $e) {
-    echo "<br>nehedu det gick inte att kontakta databasen<br>";
+    echo "<br>Error: $e<br>";
     exit ();
 }
 
