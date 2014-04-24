@@ -1,4 +1,3 @@
-
 password.inc.php
 
 #################
@@ -216,7 +215,3 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-
-php/includes/password.inc.php
-
-php/includes/connect.inc.php
