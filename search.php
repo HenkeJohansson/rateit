@@ -48,7 +48,17 @@ if (isset($_POST['searchtext'])) {
 						echo "</br>";
 					
                         
-                        
+                        echo'<form action ="search.php" method="post">';
+                        echo '<h3>Betygsätt</h3>';
+                            <p>1 <input type="radio" name="rate" value="1">
+                            2 <input type="radio" name="rate" value="2">
+                            3 <input type="radio" name="rate" value="3">            
+                            4 <input type="radio" name="rate" value="4">
+                            5 <input type="radio" name="rate" value="5"><br/></p>
+                
+                            <input type="submit"  id="submit" value="Rateit!">
+                        </form>
+                                        
                         
 					}
 				
