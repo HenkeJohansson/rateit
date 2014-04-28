@@ -9,18 +9,18 @@ $node = $dom->createElement('markers');
 $parnode = $dom->appendChild($node);
 
 // Opens a connection to the database
-require ('includes/connect.inc-php');
+require ('includes/connect.inc.php');
 
 // Select all the rows in the Place table
 
-$query = "SELECT * FROM Places";
+$sql= "SELECT * FROM Places";
 $result = $pdo->query($sql);
 
 header('Content-type: text/xml');
 
 // Looping through the rows, adding XML nodes for each
 
-while ($row = $result as $row) {
+foreach ($result as $row) {
 	// Add to XML document node
 	$node = $dom->createElement('marker');
 	$newnode = $parnode->appendChild($node);
