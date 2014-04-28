@@ -16,7 +16,9 @@ function load() {
 
 	var infoWindow = new google.maps.InfoWindow;
 
-	downloadUrl('createXML.php',function(data) {
+	var createXMLFile = '../php/createXML.php':
+
+	downloadUrl(createXMLFile,function(data) {
 		var xml = data.responseXML;
 		var markers = xml.documentElement.getElementsByTagName('marker');
 
