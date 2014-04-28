@@ -1,6 +1,7 @@
 
 
 // https://developers.google.com/maps/documentation/webservices/
+// https://developers.google.com/maps/articles/phpsqlajax_v3
 
 window.onload = function() {
 
@@ -20,7 +21,7 @@ window.onload = function() {
 	}
 }
 
-// Array för stylingen av kartan
+// Stylingen av kartan
 
 var pinkColor = '#F9BCBE';
 
