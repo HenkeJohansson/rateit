@@ -3,7 +3,7 @@
 
 
 //upprätta kontakt med databas
-include $_SERVER['DOCUMENT_ROOT'].'/rateit/connect.php'; ?>
+include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 
 <?php include "php/header.php"; ?>
 
@@ -19,7 +19,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/connect.php'; ?>
 if (isset($_POST['searchtext'])) {
 				$search = $_POST['searchtext'];
 				
-				$sql_searchPlace = "SELECT * FROM place ";
+				$sql_searchPlace = "SELECT * FROM places WHERE places.placeName LIKE '%$search%'";
 					$result_searchPlace=$pdo->query($sql_searchPlace);
 					foreach( $result_searchPlace as $row){
 						//hämta data från place-tabellen
@@ -34,23 +34,29 @@ if (isset($_POST['searchtext'])) {
 						echo "<h3>";
 						echo $placeName;
 						echo "</h3>";
-                        echo $rating;
+                        echo "<p><b>Betyg: </b>";
+                        echo $rating . "</p>";
                         echo "</br>";
-						echo "Info: ";
-						echo $description;
+						echo "<p><b>Info: </b> ";
+						echo $description . "</p>";
 						echo "</br>";
-                        echo $type;
+                        echo "<p><b>Typ: </b>";
+                        echo $type . "</p>";
                         echo "</br>";
-						echo $address;
+                        echo "<p><b>Adress: </b>";
+						echo $address . "</p>";
 						echo "</br>";
-							
+					
+                        
+                        
+                        
 					}
 				
 				}
-
+        
+        
+        
 ?>
-
-
 
 
 

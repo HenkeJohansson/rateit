@@ -3,8 +3,7 @@
 
 
 //upprätta kontakt med databas
-include $_SERVER['DOCUMENT_ROOT'].'/rateit/connect.php'; ?>
-
+include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 <?php include "php/header.php"; ?>
     <div id="container">
         <h3>Lägg till plats</h3>
