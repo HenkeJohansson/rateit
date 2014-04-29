@@ -51,9 +51,9 @@ function showMap(lat, lon) {
 		mapOptions);
 
 	// Sätter en "pin" på kartan
-	var marker = new google.maps.Marker( {
-		position: myLatLng,
-		map: map,
-		title: 'Njahahaha!'
-	});
+	// var marker = new google.maps.Marker( {
+	// 	position: myLatLng,
+	// 	map: map,
+	// 	title: 'Njahahaha!'
+	// });
 }

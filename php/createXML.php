@@ -1,6 +1,5 @@
 <?php
 
-require ('includes/db_info.inc.php');
 
 // Start of XML-file, create the parent node
 
@@ -28,6 +27,7 @@ foreach ($result as $row) {
 	$newnode->setAttribute('address',$row['address']);
 	$newnode->setAttribute('lat', $row['lat']);
 	$newnode->setAttribute('lng', $row['lng']);
+	$newnode->setAttribute('description', $row['description']);
 	$newnode->setAttribute('rating', $row['rating']);
 	$newnode->setAttribute('type', $row['type']);
 }
