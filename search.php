@@ -92,7 +92,7 @@ if (isset($_POST['searchtext'])) {
 
 
 
-    </div><!--#conainer-->
+    </div><!--#container-->
 
 
 
