@@ -85,6 +85,7 @@ body{
     
 }
 
+
 #submit:hover {       
     background-color: #95d788;
     background-image: linear-gradient(#6cbb6b, #95d788);
@@ -99,6 +100,46 @@ body{
 #submit::-moz-focus-inner {
        border: 0;  /* Small centering fix for Firefox */
 }
+
+/*Betygsätt*/
+
+
+#submit2
+{       
+    background-color: #66BBC0;
+    //background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 3px 3px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;*/
+    height: 23px;
+    margin: 8px 0 0 1px;
+    padding: 0;
+    width: 55px;
+    cursor: pointer;
+    font: bold 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #fff;    
+    
+}
+
+
+#submit2:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit2:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit2::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
 
 
 

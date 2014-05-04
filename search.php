@@ -23,7 +23,8 @@ if (isset($_POST['searchtext'])) {
 					$result_searchPlace=$pdo->query($sql_searchPlace);
 					foreach( $result_searchPlace as $row){
 						//hämta data från place-tabellen
-						$placeName = $row['placeName'];
+						$id = $row['id'];
+                        $placeName = $row['placeName'];
 						$address = $row['address'];
 						$description = $row ['description'];
 						$rating = $row['rating'];
@@ -48,21 +49,41 @@ if (isset($_POST['searchtext'])) {
 						echo "</br>";
 					
                         
-                        echo'<form action ="search.php" method="post">';
+                        echo "<form action ='search.php' method='post'>";
                         echo '<h3>Betygsätt</h3>';
-                            <p>1 <input type="radio" name="rate" value="1">
-                            2 <input type="radio" name="rate" value="2">
-                            3 <input type="radio" name="rate" value="3">            
-                            4 <input type="radio" name="rate" value="4">
-                            5 <input type="radio" name="rate" value="5"><br/></p>
+                        echo "<p>1 <input type='radio' name='rate' value='1'>";
+                        echo "2 <input type='radio' name='rate' value='2'>";
+                        echo "3 <input type='radio' name='rate' value='3'>";            
+                        echo "4 <input type='radio' name='rate' value='4'>";
+                        echo "5 <input type='radio' name='rate' value='5'><br/></p>";
                 
-                            <input type="submit"  id="submit" value="Rateit!">
-                        </form>
+                        echo "<input type='submit' name'submit' id='submit2' value='Rateit!'>";
+                        echo "</form>";
                                         
-                        
+   
 					}
+                    
+                    
+                }
+
+                    
+                    if (isset($_POST['submit'])){
+                     
+                        if(!empty($_POST['rate'])){ /*hämta knappens värde*/
+						
+							$rating = $_POST['rate'];
+						
+						}    
+						    else{
+                                echo "Du betygsatte aldrig";
+                            }
+                        
+                        
+                        $sql_ratePlace = "INSERT INTO places(rating)VALUES('$rating')";
+						$result=$pdo->exec($sql_ratePlace);
 				
-				}
+				
+                    }
         
         
         
