@@ -38,7 +38,7 @@
 			</li>
 
 			<li>
-				<a href="#">Om</a>
+				<a href="om.php">Om</a>
 			</li>
 		</ul>
 	</div><!-- #categories -->

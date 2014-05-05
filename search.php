@@ -9,10 +9,11 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 
     <div id="container">
         <h3>Sök platser</h3>
-            <form method="post" id="searchbox" action="search.php">
-                <input id="search" type="text" name="searchtext" placeholder="Sök...">
-                <input id="submit" type="submit" value="Sök">
-            </form>
+            <div class="bit-3">
+                <form method="post" id="searchbox" action="search.php">
+                    <input id="search" type="text" name="searchtext" placeholder="Sök...">
+                    <input id="submit" type="submit" value="Sök">
+                </form>
 
 <?php
 
@@ -89,9 +90,9 @@ if (isset($_POST['searchtext'])) {
         
 ?>
 
+                
 
-
-
+        </div><!--.bit-3-->
     </div><!--#container-->
 
 

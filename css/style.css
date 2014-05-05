@@ -226,6 +226,11 @@ body {
   border: 0;
   /* Small centering fix for Firefox */ }
 
+.bit-3 h3 {
+  margin-left: 0px; }
+.bit-3 p {
+  font-size: 15px; }
+
 /********************
 MOBILER & FALLBACK
 Grundinställningar för stylen på sidan.
@@ -241,6 +246,7 @@ html, body {
 h1, h2, h3, h4, h5 {
   margin-top: 15px;
   margin-bottom: 15px;
+  margin-left: 5px;
   color: #66bbc0; }
 
 /***************************
@@ -322,8 +328,7 @@ MENYN
       width: 100%; }
   #container p {
     font-size: 15px;
-    line-height: 1.5;
-    text-align: justify; }
+    line-height: 1.5; }
 
 /*********************
 TABLET & MINDRE LAPTOPS
