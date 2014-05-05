@@ -25,11 +25,12 @@ function load() {
 			var address = markers[i].getAttribute('address');
 			var description = markers[i].getAttribute('description');
 			var type = markers[i].getAttribute('type');
+            var pic = markers [i].getAttribute('pic');
 			var point = new google.maps.LatLng(
 				parseFloat(markers[i].getAttribute('lat')),
 				parseFloat(markers[i].getAttribute('lng'))
 				);
-			var html = '<b>' + placeName + '</b> <br>' + address;
+			var html = '<b>' + placeName + '</b> <br>' + address + '<br>' + '<img src="pic"/>';
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 				map: map,
