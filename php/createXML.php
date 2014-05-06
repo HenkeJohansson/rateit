@@ -30,7 +30,7 @@ foreach ($result as $row) {
 	$newnode->setAttribute('description', $row['description']);
 	$newnode->setAttribute('rating', $row['rating']);
 	$newnode->setAttribute('type', $row['type']);
-    
+    $newnode->setAttribute('pic', $row['pic']);
 }
 
 echo $dom->saveXML();
