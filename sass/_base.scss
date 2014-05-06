@@ -6,11 +6,18 @@ html, body {
     background: #e6e6e6;
 }
 
-h1, h2, h3, h4 ,h5 {
+h1, h2, h3 ,h5 {
     margin-top:15px;
     margin-bottom:15px;
     margin-left:5px;
 	color: $turkos;
+}
+
+h4{
+    margin-bottom:-15px;
+    color:$turkos
+
+
 }
 
 /***************************

@@ -27,10 +27,11 @@ function load() {
 			var description = markers[i].getAttribute("description");
 			var rating = markers[i].getAttribute("rating");
 			var type = markers[i].getAttribute("type");
+            var pic = markers[i].getAttribute("pic");
 			var point = new google.maps.LatLng(
 					parseFloat(markers[i].getAttribute("lat")),
 					parseFloat(markers[i].getAttribute("lng")));
-			var html = "<b>" + placeName + "</b> <br/>" + description + "<br>" + rating;
+            var html = '<h4>' + placeName + '</h4> <br>' + description + '<br>' + '<b> Adress: </b>' + address + '<br>' + '<b> Betyg: </b>' + rating + '<br>' +  '<img src="' + pic + '">';
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
 				map: map,
