@@ -40,10 +40,15 @@ function load() {
 			});
 
 			bindInfoWindow(marker, map, infoWindow, html);
+            
 		}
+        
 	});
+    
+        
+     
 }
-
+       
 function bindInfoWindow(marker, map, infoWindow, html) {
 	google.maps.event.addListener(marker, 'click', function() {
 		infoWindow.setContent(html);
