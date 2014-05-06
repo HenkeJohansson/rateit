@@ -31,6 +31,8 @@ function load() {
 			var point = new google.maps.LatLng(
 					parseFloat(markers[i].getAttribute("lat")),
 					parseFloat(markers[i].getAttribute("lng")));
+            
+            
             var html = '<h4>' + placeName + '</h4> <br>' + description + '<br>' + '<b> Adress: </b>' + address + '<br>' + '<b> Betyg: </b>' + rating + '<br>' +  '<img src="' + pic + '">';
 			var icon = customIcons[type] || {};
 			var marker = new google.maps.Marker({
