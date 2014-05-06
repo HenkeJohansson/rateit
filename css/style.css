@@ -231,19 +231,6 @@ body {
 .bit-3 p {
   font-size: 15px; }
 
-/*Pin-window*/
-element.style {
-  width: 306px;
-  height: 247px;
-  position: absolute;
-  left: 157px;
-  top: 230px;
-  z-index: 230; }
-
-#info {
-  width: 500px;
-  background-color: #000; }
-
 /********************
 MOBILER & FALLBACK
 Grundinställningar för stylen på sidan.

@@ -32,6 +32,7 @@ if (isset($_POST['searchtext'])) {
                         $type = $row['type'];
                         $lat = $row['lat'];
                         $lng = $row['lng'];
+                        $pic = $row['pic'];
 						
 						echo "<h3>";
 						echo $placeName;
