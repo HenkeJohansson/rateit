@@ -25,7 +25,7 @@
 				<img src="icons/search.png" alt="Sök platser" height="18px"><a href="search.php" alt="Söksidan"> Sök platser</a>
 			</li>
 			<li>
-				<img src="icons/pen.png" alt="Lägg till plats" height="18px"><a href="add.php"> Lägg till plats</a>
+				<img src="icons/pen.png" alt="Lägg till plats" height="18px"><a href="add.php"> Föreslå en plats</a>
 			</li>
 		</ul>
 		<ul id="botten">
