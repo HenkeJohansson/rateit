@@ -309,7 +309,7 @@ html, body {
 h1, h2, h3, h5 {
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 5px;
+  margin-left: 0px;
   color: #66bbc0; }
 
 h4 {
