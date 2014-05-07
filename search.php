@@ -8,9 +8,9 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 <?php include "php/header.php"; ?>
 
     <div id="container">
-        <h3>Sök platser</h3>
             <div class="bit-3">
                 <form method="post" id="searchbox" action="search.php">
+                    <h3>Sök platser</h3>
                     <input id="search" type="text" name="searchtext" placeholder="Sök...">
                     <input id="submit" type="submit" value="Sök">
                 </form>
@@ -39,6 +39,8 @@ if (isset($_POST['searchtext'])) {
 						echo "</h3>";
                         echo "<p><b>Betyg: </b>";
                         echo $rating . "</p>";
+                        echo "</br>";
+                        echo "<img src='$pic'>";
                         echo "</br>";
 						echo "<p><b>Info: </b> ";
 						echo $description . "</p>";
