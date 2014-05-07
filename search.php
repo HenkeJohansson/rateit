@@ -8,7 +8,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 <?php include "php/header.php"; ?>
 
     <div id="container">
-            <div class="bit-3">
+            
                 <form method="post" id="searchbox" action="search.php">
                     <h3>Sök platser</h3>
                     <input id="search" type="text" name="searchtext" placeholder="Sök...">
@@ -95,7 +95,7 @@ if (isset($_POST['searchtext'])) {
 
                 
 
-        </div><!--.bit-3-->
+        
     </div><!--#container-->
 
 

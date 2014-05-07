@@ -6,7 +6,7 @@
 include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 <?php include "php/header.php"; ?>
     <div id="container">
-        <div class="bit-3">
+        
                 <form method="post" id="addbox" action="add.php">
                      <h3>Föreslå en plats</h3>
                         <p>Känner ni att vi har glömt en plats? Föreslå den gärna till oss då!</p>
@@ -25,7 +25,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                     <input type="submit" id="submitAdd" value="Skicka">
                 </form>
     
-        </div><!--.bit-3-->
+        
     </div><!--#container-->
                    <?php
                 
