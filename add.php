@@ -18,9 +18,9 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                     <p>Adress</p>
                         <input type="text" id="insertText" name="address">
                     <p>Typ <i>(Restaurang, pub etc.)</i></p>
-                        <input type="text" id="insertText" name="Type"> <!--select -> option istället?-->
+                        <input type="text" id="insertText" name="type"> <!--select -> option istället?-->
                     <p>Betyg (1-5)</p>
-                        <input type="rating" id="insertText" name="rating"> <!--select -> option istället?-->
+                        <input type="text" id="insertText" name="rating"> <!--select -> option istället?-->
                     </br>
                     <input type="submit" id="submitAdd" value="Skicka">
                 </form>
@@ -29,7 +29,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
     </div><!--#container-->
                    <?php
                 
-                    if (isset($_POST['place_name'])){
+                    if (isset($_POST['place_n   ame'])){
                     
                         //hämta data från formulär
                         $place_name = htmlspecialchars($_POST['place_name'],ENT_QUOTES);
@@ -48,7 +48,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                             echo "Det funkar ej!";
                         }
                     }
-                                
+                        
                     
                ?>
  
