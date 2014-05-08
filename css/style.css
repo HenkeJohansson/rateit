@@ -294,6 +294,11 @@ body {
   border: 0;
   /* Small centering fix for Firefox */ }
 
+/*Karta - infowindow*/
+.gm-style-iw {
+  width: 200px;
+  margin: 0 0 0 3px; }
+
 /********************
 MOBILER & FALLBACK
 Grundinställningar för stylen på sidan.

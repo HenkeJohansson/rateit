@@ -8,9 +8,8 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 <?php include "php/header.php"; ?>
 
     <div id="container">
-        <h3>Om</h3>
-        
-       <div class="bit-3"> 
+       <div class="bit-3">
+        <h3>Om</h3>   
            <p>Malmö stad har landets största högskola med 25 000 studenter från hela världen per år. RateIt är en webbapplikation som hjälper Malmö högskolas studenter att på ett enkelt och effektivt tillvägagångssätt recensera och betygsätta Malmös nöjesliv.</p>
            <br/>
 
