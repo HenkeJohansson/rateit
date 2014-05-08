@@ -29,7 +29,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
     </div><!--#container-->
                    <?php
                 
-                    if (isset($_POST['placeName'])){
+                    if (isset($_POST['place_Name'])){
                     
                         //hämta data från formulär
                         $place_name = htmlspecialchars($_POST['place_name'],ENT_QUOTES);
