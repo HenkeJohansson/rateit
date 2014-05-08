@@ -36,7 +36,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                         $description = htmlspecialchars($_POST['description'],ENT_QUOTES);
                         $address = htmlspecialchars($_POST['address'],ENT_QUOTES);
                         $type = htmlspecialchars($_POST['type'],ENT_QUOTES);
-                        $rating = htmlspecialchars($_POST['rating'],ENT,QUOTES);
+                        $rating = htmlspecialchars($_POST['rating'],ENT_QUOTES);
                         
                         //lägger in data i databasen
                         $sql = "INSERT INTO suggest_places (place_name, description, address, type, rating) VALUES (?,?,?,?,?)";
