@@ -44,6 +44,8 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                         try {
                             $statement=$pdo->prepare($sql);
                             $statement->execute(array($place_name, $description, $address, $type, $rating));
+                            
+                            echo "<p>Vi har tagit emot ditt förslag, tack!</p>";
                         } catch (PDOExeption $e) {
                             echo "Det funkar ej!";
                         }
