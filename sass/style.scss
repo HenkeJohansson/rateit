@@ -29,6 +29,29 @@ body{
 }
 
 
+/*div:ar*/
+
+#form{
+    
+    width:300px;
+    float:left;
+}    
+
+#places{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 300px;
+    float: left;
+    margin-left: -4px;
+    margin-top: 2px;
+    padding: 5px 8px 15px 12px;
+}
+
+
 /*sökfältet i search.php*/
 
 #searchbox
@@ -39,7 +62,7 @@ body{
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;            
-    width: 250px;
+    width: 280px;
     height: 90px;
     padding: 5px;
     margin: 15px 0 0 -5px;
@@ -59,7 +82,7 @@ body{
     padding: 5px 9px;
     margin: 2px 0 0 5px;
     height: 23px;
-    width: 165px;
+    width: 190px;
     border: 1px solid #a4c3ca;
     font: normal 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
@@ -168,7 +191,7 @@ body{
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;            
-    width: 250px;
+    width: 300px;
     padding: 5px;
     margin: 15px 0 0 -5px;
     overflow: hidden; /* Clear floats */
@@ -190,7 +213,7 @@ body{
     padding: 5px 9px;
     margin: 2px 0 0 5px;
     //height: 23px;
-    width: 165px;
+    width: 275px;
     border: 1px solid #a4c3ca;
     font: normal 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
@@ -211,9 +234,9 @@ body{
     /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
                 0 1px 0 rgba(255, 255, 255, 0.3) inset;*/
     height: 23px;
-    margin: 10px 0 0 5px;
+    margin: 10px 0 5px 5px;
     padding: 0;
-    width: 55px;
+    width: 275px;
     cursor: pointer;
     font: bold 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #fff;    
@@ -263,6 +286,115 @@ you can add resource intensive styles.
 
 	// styles in 768up.scss
 	@import "768up";
+    
+        /*div:ar*/
+    
+#form{
+    
+    width:640px;
+    float:left;
+    //border: 1px solid #000;
+}    
+
+#places{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 300px;
+    height: 630px;
+    float: left;
+    margin-left: 2px;
+    overflow:auto;
+    margin-top: 15px;
+    padding: 5px 8px 15px 12px;
+}
+    
+    
+/*föreslå en plats-sidan*/
+
+/*formulär*/
+
+#addbox
+{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;            
+    width: 630px;
+    padding: 5px 0 15px 10px;
+    margin: 15px 0 15px -5px;
+    overflow: hidden; /* Clear floats */
+    
+    p{
+        padding-left:5px;
+        padding-bottom:2px;
+        padding-top:7px;
+        color: $turkos;
+        font-size: 18px;
+    }
+    
+    h3{
+        padding-left:5px;
+    
+    }
+}
+
+#insertText {
+    padding: 5px 9px;
+    margin: 2px 0 0 5px;
+    //height: 23px;
+    width: 550px;
+    border: 1px solid #a4c3ca;
+    font: normal 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
+    background: #f1f1f1;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+
+
+#submitAdd
+{       
+    background-color: #66BBC0;
+    //background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 3px 3px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;*/
+    height: 23px;
+    margin: 10px 0 0 5px;
+    padding: 0;
+    width: 550px;
+    height: 35px;
+    cursor: pointer;
+    font: bold 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #fff;    
+    
+}
+
+
+#submitAdd:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submitAdd:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submitAdd::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
 
 } // end of media query
 
@@ -276,5 +408,243 @@ you can add resource intensive styles.
 
 	// styles in 1030up.scss
 	//@import "1030up";
+    
+    /*div:ar*/
+    
+#form{
+    
+    width:990px;
+    float:left;
+}    
 
+#places{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 300px;
+    height: 630px;
+    float: left;
+    margin-left: 2px;
+    overflow:auto;
+    margin-top: 15px;
+    padding: 5px 8px 15px 12px;
+}
+    
+    
+/*föreslå en plats-sidan*/
+
+/*formulär*/
+
+#addbox
+{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;            
+    width: 970px;
+    padding: 5px 0 15px 10px;
+    margin: 15px 0 15px -5px;
+    overflow: hidden; /* Clear floats */
+    
+    p{
+        padding-left:5px;
+        padding-bottom:2px;
+        padding-top:7px;
+        color: $turkos;
+        font-size: 18px;
+    }
+    
+    h3{
+        padding-left:5px;
+    
+    }
+}
+
+#insertText {
+    padding: 5px 9px;
+    margin: 2px 0 0 5px;
+    //height: 23px;
+    width: 900px;
+    border: 1px solid #a4c3ca;
+    font: normal 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
+    background: #f1f1f1;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+
+
+#submitAdd
+{       
+    background-color: #66BBC0;
+    //background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 3px 3px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;*/
+    height: 23px;
+    margin: 10px 0 0 5px;
+    padding: 0;
+    width: 900px;
+    height: 35px;
+    cursor: pointer;
+    font: bold 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #fff;    
+    
+}
+
+
+#submitAdd:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submitAdd:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submitAdd::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+    
+    
+    
+
+} // end of media query
+
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 1240px) {
+
+	// styles in 1240up.scss
+	//@import "1240up";
+
+    
+    
+/*div:ar*/
+    
+#form{
+    
+    width:990px;
+    float:left;
+}    
+
+#places{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 300px;
+    height: 630px;
+    float: left;
+    margin-left: 2px;
+    overflow:auto;
+    margin-top: 15px;
+    padding: 5px 8px 15px 12px;
+}
+    
+    
+/*föreslå en plats-sidan*/
+
+/*formulär*/
+
+#addbox
+{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;            
+    width: 970px;
+    padding: 5px 0 15px 10px;
+    margin: 15px 0 15px -5px;
+    overflow: hidden; /* Clear floats */
+    
+    p{
+        padding-left:5px;
+        padding-bottom:2px;
+        padding-top:7px;
+        color: $turkos;
+        font-size: 18px;
+    }
+    
+    h3{
+        padding-left:5px;
+        
+    
+    }
+}
+
+#insertText {
+    padding: 5px 9px;
+    margin: 2px 0 0 5px;
+    //height: 23px;
+    width: 900px;
+    border: 1px solid #a4c3ca;
+    font: normal 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
+    background: #f1f1f1;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+
+
+#submitAdd
+{       
+    background-color: #66BBC0;
+    //background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 3px 3px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;*/
+    height: 23px;
+    margin: 10px 0 0 5px;
+    padding: 0;
+    width: 900px;
+    height: 35px;
+    cursor: pointer;
+    font: bold 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #fff;    
+    
+}
+
+
+#submitAdd:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submitAdd:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submitAdd::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+
+
+
+    
+    
+    
 } // end of media query
