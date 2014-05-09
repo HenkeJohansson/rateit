@@ -10,9 +10,14 @@ body{
 
     background:#e6e6e6;
 
-
-
 }
+
+    #container p {
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: left; 
+}
+
 
 // inporterar rutnätet och 
 @import "grid";
@@ -49,6 +54,18 @@ body{
     margin-left: -4px;
     margin-top: 2px;
     padding: 5px 8px 15px 12px;
+    
+        img{
+        
+        margin-left: -2px;
+    
+    
+        }
+    
+        h4{
+            margin-top: 5px;
+            color: $rosa;
+        }
     }
 
 #places{
@@ -303,7 +320,7 @@ you can add resource intensive styles.
 	// styles in 768up.scss
 	@import "768up";
     
-        /*div:ar*/
+/*div:ar*/
     
 #form{
     
@@ -327,6 +344,34 @@ you can add resource intensive styles.
     margin-top: 15px;
     padding: 5px 8px 15px 12px;
 }
+    
+    
+#searchContent{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding: 5px 8px 15px 12px;
+    float: left;
+    margin-right: 10px;
+        
+        img{
+        
+        margin-left: -2px;
+    
+    
+        }
+        h4{
+            margin-top: 5px;
+            color: $rosa;
+        }
+    }
+      
     
     
 /*föreslå en plats-sidan*/
@@ -449,6 +494,35 @@ you can add resource intensive styles.
     padding: 5px 8px 15px 12px;
 }
     
+#searchContent{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding: 5px 8px 15px 12px;
+    float: left;
+    margin-right: 10px;
+    
+        h4{
+            margin-top: 5px;
+            color: $rosa;
+        }
+        
+            
+        img{
+        
+        margin-left: -2px;
+    
+    
+        }
+        
+    }
+       
     
 /*föreslå en plats-sidan*/
 
@@ -572,6 +646,36 @@ This is for the larger monitors and possibly full screen viewers.
     margin-top: 15px;
     padding: 5px 8px 15px 12px;
 }
+    
+    
+#searchContent{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding: 5px 8px 15px 12px;
+    float: left;
+    margin-right: 10px;
+    
+        h4{
+            margin-top: 5px;
+            color: $rosa;
+        }
+        
+            
+        img{
+        
+        margin-left: -2px;
+    
+    
+        }
+        
+    }
         
     
 /*föreslå en plats-sidan*/

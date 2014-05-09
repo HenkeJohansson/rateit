@@ -8,6 +8,11 @@
 body {
   background: #e6e6e6; }
 
+#container p {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left; }
+
 /*
 *
 * Lemonade v1.1
@@ -152,6 +157,11 @@ body {
   margin-left: -4px;
   margin-top: 2px;
   padding: 5px 8px 15px 12px; }
+  #searchContent img {
+    margin-left: -2px; }
+  #searchContent h4 {
+    margin-top: 5px;
+    color: #f9bcbe; }
 
 #places {
   background-color: #f6f6f6;
@@ -456,8 +466,7 @@ you can add resource intensive styles.
         width: 100%; }
     #container p {
       font-size: 15px;
-      line-height: 1.5;
-      text-align: justify; }
+      line-height: 1.5; }
 
   /*div:ar*/
   #form {
@@ -478,6 +487,25 @@ you can add resource intensive styles.
     overflow: auto;
     margin-top: 15px;
     padding: 5px 8px 15px 12px; }
+
+  #searchContent {
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding: 5px 8px 15px 12px;
+    float: left;
+    margin-right: 10px; }
+    #searchContent img {
+      margin-left: -2px; }
+    #searchContent h4 {
+      margin-top: 5px;
+      color: #f9bcbe; }
 
   /*föreslå en plats-sidan*/
   /*formulär*/
@@ -568,6 +596,25 @@ you can add resource intensive styles.
     margin-top: 15px;
     padding: 5px 8px 15px 12px; }
 
+  #searchContent {
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding: 5px 8px 15px 12px;
+    float: left;
+    margin-right: 10px; }
+    #searchContent h4 {
+      margin-top: 5px;
+      color: #f9bcbe; }
+    #searchContent img {
+      margin-left: -2px; }
+
   /*föreslå en plats-sidan*/
   /*formulär*/
   #addbox {
@@ -654,6 +701,25 @@ This is for the larger monitors and possibly full screen viewers.
     overflow: auto;
     margin-top: 15px;
     padding: 5px 8px 15px 12px; }
+
+  #searchContent {
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding: 5px 8px 15px 12px;
+    float: left;
+    margin-right: 10px; }
+    #searchContent h4 {
+      margin-top: 5px;
+      color: #f9bcbe; }
+    #searchContent img {
+      margin-left: -2px; }
 
   /*föreslå en plats-sidan*/
   /*formulär*/

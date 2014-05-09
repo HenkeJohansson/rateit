@@ -20,7 +20,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                 </form>
 
 <?php
-        echo "<div id='searchContent'>"; 
+        //echo "<div id='searchContent'>"; 
 
 
             if (isset($_POST['searchtext'])) {
@@ -45,8 +45,9 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                         $lat = $row['lat'];
                         $lng = $row['lng'];
                         $pic = $row['pic'];
-						
-                        echo "<h3> Resultat: </h3>";
+                        $opening_hours = $row['opening_hours'];
+						echo "<div id='searchContent'>";
+                        echo "<h4> Sökord: <i> $search</i> </h4><br>";
 						echo "<h3>";
 						echo $placeName;
 						echo "</h3>";
@@ -57,14 +58,16 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                         echo "</br>";
 						echo "<p><b>Info: </b> ";
 						echo $description . "</p>";
-						echo "</br>";
-                        echo "<p><b>Typ: </b>";
-                        echo $type . "</p>";
                         echo "</br>";
                         echo "<p><b>Adress: </b>";
 						echo $address . "</p>";
 						echo "</br>";
-					
+                        echo "<p> <b>Öppettider: </b>";
+                        echo $opening_hours . "</p>";
+                        echo "</br>";
+                        echo "<p><b>Typ: </b>";
+                        echo $type . "</p>";
+					    
                         
                         echo "<form action ='search.php' method='post'>";
                         echo '<h3>Betygsätt</h3>';
@@ -76,7 +79,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                 
                         echo "<input type='submit' name'submit' id='submit2' value='Rateit!'>";
                         echo "</form>";
-                                        
+                        echo '</div>';
    
 					}
                     
@@ -102,7 +105,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 				
                     }
         
-        echo "</div>";
+        //echo "</div>";
         
 ?>
 

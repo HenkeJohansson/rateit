@@ -65,13 +65,6 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
    
 					}
                     
-                    
-            
-
-            
-            
-            
-            
             ?>
             
             
