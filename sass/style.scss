@@ -19,6 +19,15 @@ body{
 }
 
 
+//kartan
+
+#map {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block; }
+
 // inporterar rutnätet och 
 @import "grid";
 @import "variables";
@@ -319,7 +328,16 @@ you can add resource intensive styles.
 
 	// styles in 768up.scss
 	@import "768up";
+ 
     
+
+//kartan
+#map {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block; }     
 /*div:ar*/
     
 #form{
@@ -469,8 +487,17 @@ you can add resource intensive styles.
 
 	// styles in 1030up.scss
 	//@import "1030up";
+
+
+//kartan
+#map {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block; }     
     
-    /*div:ar*/
+/*div:ar*/
     
 #form{
     
@@ -621,7 +648,13 @@ This is for the larger monitors and possibly full screen viewers.
 	// styles in 1240up.scss
 	//@import "1240up";
 
-    
+//kartan
+#map {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block; }    
     
 /*div:ar*/
     

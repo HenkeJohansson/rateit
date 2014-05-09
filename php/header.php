@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>RateIt</title>
 </head>
-<body>
+<body onload="load()">
 
 	<div id="menu" class="group">
 		<a href="index.php"><img src="logga.png" alt="RateIt"></a>
