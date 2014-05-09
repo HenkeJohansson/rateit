@@ -15,7 +15,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
             
                 <form method="post" id="searchbox" action="search.php">
                     <h3>Sök platser</h3>
-                    <input id="search" type="text" name="searchtext" placeholder="Sök...">
+                    <input id="search" type="text" name="searchtext" placeholder="⌕ Sök...">
                     <input id="submit" type="submit" value="Sök">
                 </form>
 
@@ -84,9 +84,6 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                     
                 }
             
-
-
-                    
                     if (isset($_POST['submit'])){
                      
                         if(!empty($_POST['rate'])){ /*hämta knappens värde*/

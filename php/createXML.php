@@ -31,6 +31,7 @@ foreach ($result as $row) {
 	$newnode->setAttribute('rating', $row['rating']);
 	$newnode->setAttribute('type', $row['type']);
     $newnode->setAttribute('pic', $row['pic']);
+    $newnode->setAttribute('opening_hours', $row['opening_hours']);
 }
 
 echo $dom->saveXML();

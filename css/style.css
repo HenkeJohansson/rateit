@@ -327,7 +327,9 @@ body {
 /*Karta - infowindow*/
 .gm-style-iw {
   width: 200px;
-  margin: 0 0 0 3px; }
+  margin: 0 0 0 3px;
+  overflow: none;
+  line-height: 25px; }
 
 /********************
 MOBILER & FALLBACK
