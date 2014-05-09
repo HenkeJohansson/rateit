@@ -7,6 +7,10 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 
 <?php include "php/header.php"; ?>
 
+	<script src="js/main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  	<script src="js/map.js"></script>
+
     <div id="container">
             
                 <form method="post" id="searchbox" action="search.php">
@@ -16,9 +20,17 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                 </form>
 
 <?php
+        echo "<div id='searchContent'>"; 
 
-if (isset($_POST['searchtext'])) {
+
+            if (isset($_POST['searchtext'])) {
 				$search = $_POST['searchtext'];
+                
+            if ($search == ""){
+                echo "<p>Ange söktext</p>";
+                exit();
+            }
+                
 				
 				$sql_searchPlace = "SELECT * FROM places WHERE places.placeName LIKE '%$search%'";
 					$result_searchPlace=$pdo->query($sql_searchPlace);
@@ -34,6 +46,7 @@ if (isset($_POST['searchtext'])) {
                         $lng = $row['lng'];
                         $pic = $row['pic'];
 						
+                        echo "<h3> Resultat: </h3>";
 						echo "<h3>";
 						echo $placeName;
 						echo "</h3>";
@@ -67,8 +80,11 @@ if (isset($_POST['searchtext'])) {
    
 					}
                     
+
                     
                 }
+            
+
 
                     
                     if (isset($_POST['submit'])){
@@ -89,7 +105,7 @@ if (isset($_POST['searchtext'])) {
 				
                     }
         
-        
+        echo "</div>";
         
 ?>
 
@@ -103,9 +119,6 @@ if (isset($_POST['searchtext'])) {
 
 
 
-	<script src="js/main.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-  	<script src="js/map.js"></script>
 
 </body>
 </html>

@@ -35,7 +35,21 @@ body{
     
     width:300px;
     float:left;
-}    
+}
+
+    
+#searchContent{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 2px;
+    padding: 5px 8px 15px 12px;
+    }
 
 #places{
     background-color: #f6f6f6;
@@ -556,7 +570,7 @@ This is for the larger monitors and possibly full screen viewers.
     margin-top: 15px;
     padding: 5px 8px 15px 12px;
 }
-    
+        
     
 /*föreslå en plats-sidan*/
 
