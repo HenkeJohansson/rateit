@@ -43,12 +43,13 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                         $lat = $row['lat'];
                         $lng = $row['lng'];
                         $pic = $row['pic'];
-						
+						$star = $row['star'];
+                        
 						echo "<h3>";
 						echo $placeName;
 						echo "</h3>";
                         echo "<p><b>Betyg: </b>";
-                        echo $rating . "</p>";
+                        echo $rating . " " . $star .  "</p>";
                         echo "</br>";
                         echo "<img src='$pic'>";
                         echo "</br>";
