@@ -9,6 +9,25 @@
 body {
   background: #e6e6e6; }
 
+#map-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.3; }
+
+#map {
+  width: 100%;
+  height: 100%; }
+
+#container {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0; }
+
 #container p {
   font-size: 15px;
   line-height: 1.5;
@@ -163,6 +182,33 @@ body {
   width: 300px;
   float: left; }
 
+/*add.php*/
+#searchResult {
+  width: 200px;
+  height: 220px;
+  float: left;
+  margin-right: 5px;
+  padding-left: 5px; }
+  #searchResult img {
+    width: 90%; }
+  #searchResult h4 {
+    margin-top: 9px;
+    margin-bottom: 10px; }
+
+/*om-sidan*/
+#om {
+  background-color: #f6f6f6;
+  background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+  border-radius: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dedede #bababa #aaa #bababa;
+  width: 292px;
+  margin-left: -2px;
+  margin-top: 80px;
+  margin-bottom: 5px;
+  padding: 5px 8px 15px 12px; }
+
 #searchContent {
   background-color: #f6f6f6;
   background-image: linear-gradient(top, #f6f6f6, #eae8e8);
@@ -173,6 +219,7 @@ body {
   width: 292px;
   margin-left: -2px;
   margin-top: 2px;
+  margin-bottom: 5px;
   padding: 5px 8px 15px 12px; }
   #searchContent img {
     margin-left: -2px; }
@@ -181,16 +228,20 @@ body {
     color: #f9bcbe; }
 
 #places {
+  display: none;
   background-color: #f6f6f6;
   background-image: linear-gradient(top, #f6f6f6, #eae8e8);
   border-radius: 15px;
   border-width: 1px;
   border-style: solid;
   border-color: #dedede #bababa #aaa #bababa;
-  width: 300px;
+  width: 295px;
+  height: 100px;
   float: left;
-  margin-left: -6px;
-  margin-top: 2px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: -5px;
+  margin-top: 75px;
   padding: 5px 8px 15px 12px; }
 
 /*sökfältet i search.php*/
@@ -301,7 +352,7 @@ body {
   border-color: #dedede #bababa #aaa #bababa;
   width: 300px;
   padding: 5px;
-  margin: 80px 0 0 -6px;
+  margin: 75px 0 5px -6px;
   overflow: hidden;
   /* Clear floats */ }
   #addbox p {
@@ -502,7 +553,7 @@ you can add resource intensive styles.
     float: left;
     margin-left: 2px;
     overflow: auto;
-    margin-top: 15px;
+    margin-top: 80px;
     padding: 5px 8px 15px 12px; }
 
   #searchContent {
@@ -535,7 +586,7 @@ you can add resource intensive styles.
     border-color: #dedede #bababa #aaa #bababa;
     width: 630px;
     padding: 5px 0 15px 10px;
-    margin: 15px 0 15px -5px;
+    margin: 80px 0 15px -5px;
     overflow: hidden;
     /* Clear floats */ }
     #addbox p {
@@ -613,128 +664,6 @@ you can add resource intensive styles.
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
     width: 300px;
-    height: 630px;
-    float: left;
-    margin-left: 2px;
-    overflow: auto;
-    margin-top: 15px;
-    padding: 5px 8px 15px 12px; }
-
-  #searchContent {
-    background-color: #f6f6f6;
-    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
-    border-radius: 15px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #dedede #bababa #aaa #bababa;
-    width: 280px;
-    margin-left: -4px;
-    margin-top: 5px;
-    padding: 5px 8px 15px 12px;
-    float: left;
-    margin-right: 10px; }
-    #searchContent h4 {
-      margin-top: 5px;
-      color: #f9bcbe; }
-    #searchContent img {
-      margin-left: -2px; }
-
-  /*föreslå en plats-sidan*/
-  /*formulär*/
-  #addbox {
-    background-color: #f6f6f6;
-    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
-    border-radius: 15px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #dedede #bababa #aaa #bababa;
-    width: 970px;
-    padding: 5px 0 15px 10px;
-    margin: 15px 0 15px -5px;
-    overflow: hidden;
-    /* Clear floats */ }
-    #addbox p {
-      padding-left: 5px;
-      padding-bottom: 2px;
-      padding-top: 7px;
-      color: #66bbc0;
-      font-size: 18px; }
-    #addbox h3 {
-      padding-left: 5px; }
-
-  #insertText {
-    padding: 5px 9px;
-    margin: 2px 0 0 5px;
-    width: 900px;
-    border: 1px solid #a4c3ca;
-    font: normal 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
-    background: #f1f1f1;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
-
-  #submitAdd {
-    background-color: #66BBC0;
-    border-radius: 3px 3px 3px 3px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #7eba7c #578e57 #447d43;
-    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
-                0 1px 0 rgba(255, 255, 255, 0.3) inset;*/
-    height: 23px;
-    margin: 10px 0 0 5px;
-    padding: 0;
-    width: 900px;
-    height: 35px;
-    cursor: pointer;
-    font: bold 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: #fff; }
-
-  #submitAdd:hover {
-    background-color: #95d788;
-    background-image: linear-gradient(#6cbb6b, #95d788); }
-
-  #submitAdd:active {
-    background: #95d788;
-    outline: none;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
-
-  #submitAdd::-moz-focus-inner {
-    border: 0;
-    /* Small centering fix for Firefox */ } }
-/*
-LARGE VIEWING SIZE
-This is for the larger monitors and possibly full screen viewers.
-*/
-@media only screen and (min-width: 1240px) {
-  #map {
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    overflow: none; }
-
-  .gm-style-iw {
-    width: 270px;
-    margin: 0 0 0 3px;
-    overflow: none;
-    line-height: 25px; }
-    .gm-style-iw img {
-      width: 100%; }
-
-  /*div:ar*/
-  #form {
-    width: 970px;
-    float: left; }
-
-  #places {
-    background-color: #f6f6f6;
-    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
-    border-radius: 15px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #dedede #bababa #aaa #bababa;
-    width: 320px;
     height: 630px;
     float: left;
     margin-left: 2px;
@@ -821,5 +750,236 @@ This is for the larger monitors and possibly full screen viewers.
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
 
   #submitAdd::-moz-focus-inner {
+    border: 0;
+    /* Small centering fix for Firefox */ } }
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 1240px) {
+  /*logotyp*/
+  #menu img {
+    margin-left: 205px;
+    padding-top: 5px;
+    float: left; }
+
+  #map-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.3; }
+
+  #map {
+    width: 100%;
+    height: 100%; }
+
+  #container {
+    width: 960px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding-left: 10px; }
+
+  /*#map {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    overflow:none;
+  }*/
+  .gm-style-iw {
+    width: 270px;
+    margin: 0 0 0 3px;
+    overflow: none;
+    line-height: 25px; }
+    .gm-style-iw img {
+      width: 100%; }
+
+  /*div:ar*/
+  #form {
+    width: 970px;
+    float: left; }
+
+  #places {
+    display: inherit;
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 970px;
+    height: 240px;
+    float: left;
+    overflow-x: hidden;
+    /*for horizontal scroll bar */
+    overflow-y: auto;
+    /*for hiding vertical scroll bar */
+    margin-left: -5px;
+    margin-top: 80px;
+    padding: 5px 8px 15px 12px; }
+
+  /*add.php*/
+  #searchResult {
+    width: 200px;
+    height: 220px;
+    float: left;
+    margin-right: 5px;
+    padding-left: 5px; }
+    #searchResult img {
+      width: 90%;
+      height: 120px; }
+    #searchResult h4 {
+      margin-top: 15px;
+      margin-bottom: 10px; }
+
+  /*-----------------*/
+  #searchContent {
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding: 5px 8px 15px 12px;
+    float: left;
+    margin-right: 10px; }
+    #searchContent h4 {
+      margin-top: 5px;
+      color: #f9bcbe; }
+    #searchContent img {
+      margin-left: -2px; }
+
+  /*föreslå en plats-sidan*/
+  /*formulär*/
+  #addbox {
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 970px;
+    padding: 5px 0 15px 10px;
+    margin: 5px 0 15px -5px;
+    overflow: hidden;
+    /* Clear floats */ }
+    #addbox p {
+      padding-left: 5px;
+      padding-bottom: 2px;
+      padding-top: 7px;
+      color: #66bbc0;
+      font-size: 18px; }
+    #addbox h3 {
+      padding-left: 5px; }
+
+  #insertText {
+    padding: 5px 9px;
+    margin: 2px 0 0 5px;
+    width: 900px;
+    border: 1px solid #a4c3ca;
+    font: normal 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
+    background: #f1f1f1;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
+
+  #submitAdd {
+    background-color: #66BBC0;
+    border-radius: 3px 3px 3px 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;*/
+    height: 23px;
+    margin: 10px 0 0 5px;
+    padding: 0;
+    width: 900px;
+    height: 35px;
+    cursor: pointer;
+    font: bold 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #fff; }
+
+  #submitAdd:hover {
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788); }
+
+  #submitAdd:active {
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+
+  #submitAdd::-moz-focus-inner {
+    border: 0;
+    /* Small centering fix for Firefox */ }
+
+  /*sökfältet i search.php*/
+  #searchbox {
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 852px;
+    height: 120px;
+    padding: 5px;
+    margin: 80px 0 0 -3px;
+    overflow: hidden;
+    /* Clear floats */ }
+    #searchbox h3 {
+      margin: 8px; }
+
+  #search,
+  #submit {
+    float: left; }
+
+  #search {
+    padding: 5px 9px;
+    margin: 2px 0 0 5px;
+    height: 40px;
+    width: 685px;
+    border: 1px solid #a4c3ca;
+    font: normal 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
+    background: #f1f1f1;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
+
+  /* ----------------------- */
+  #submit {
+    background-color: #66BBC0;
+    border-radius: 3px 3px 3px 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;*/
+    height: 39px;
+    margin: 2px 0 0 5px;
+    padding: 0;
+    width: 140px;
+    cursor: pointer;
+    font: bold 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #fff; }
+
+  #submit:hover {
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788); }
+
+  #submit:active {
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+
+  #submit::-moz-focus-inner {
     border: 0;
     /* Small centering fix for Firefox */ } }

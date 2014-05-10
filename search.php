@@ -6,10 +6,11 @@
 include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 
 <?php include "php/header.php"; ?>
-
+<div id="map-container"><div id="map" style="height:100%"></div></div>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script src="js/getPlaces.js"></script>
+	<script src="js/map2.js"></script>
 	<script src="js/main.js"></script>
-	<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-  	<script src="js/map.js"></script>-->
 
     <div id="container">
             
@@ -27,7 +28,9 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 				$search = $_POST['searchtext'];
                 
             if ($search == ""){
+                echo "<div id='searchContent'>";
                 echo "<p>Ange söktext</p>";
+                echo "</div>";
                 exit();
             }
                 
@@ -46,13 +49,14 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                         $lng = $row['lng'];
                         $pic = $row['pic'];
                         $opening_hours = $row['opening_hours'];
+                        $star = $row['star'];
 						echo "<div id='searchContent'>";
                         echo "<h4> Sökord: <i> $search</i> </h4><br>";
 						echo "<h3>";
 						echo $placeName;
 						echo "</h3>";
                         echo "<p><b>Betyg: </b>";
-                        echo $rating . "</p>";
+                        echo $rating . " " . $star . "</p>";
                         echo "</br>";
                         echo "<img src='$pic'>";
                         echo "</br>";
@@ -80,6 +84,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                         echo "<input type='submit' name'submit' id='submit2' value='Rateit!'>";
                         echo "</form>";
                         echo '</div>';
+                        
    
 					}
                     
@@ -110,9 +115,9 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 ?>
 
                 
-
+        </div><!--#container-->
         
-    </div><!--#container-->
+    
 
 
 
