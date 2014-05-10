@@ -8,8 +8,8 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 <?php include "php/header.php"; ?>
 
 	<script src="js/main.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-  	<script src="js/map.js"></script>
+	<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  	<script src="js/map.js"></script>-->
 
     <div id="container">
             

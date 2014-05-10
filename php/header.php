@@ -14,7 +14,7 @@
 		<div id="cat-butt" class="group">☰</div>
 	</div><!-- #menu -->
 
-	<div id="map"></div>
+	<!--<div id="map"></div>-->
 
 	<div id="categories">
 		<ul>
