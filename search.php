@@ -9,7 +9,6 @@ include 'php/includes/connect.inc.php'; ?>
 <div id="map-container"><div id="map" style="height:100%"></div></div>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	<script src="js/getPlaces.js"></script>
-	<script src="js/map2.js"></script>
 	<script src="js/main.js"></script>
 
     <div id="container">
