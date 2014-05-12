@@ -6,28 +6,31 @@
 include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 
 <?php include "php/header.php"; ?>
-
-	<script src="js/main.js"></script>
+<div id="map-container"><div id="map" style="height:100%"></div></div>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-  	<script src="js/map.js"></script>
+	<script src="js/getPlaces.js"></script>
+	<script src="js/map2.js"></script>
+	<script src="js/main.js"></script>
 
     <div id="container">
             
                 <form method="post" id="searchbox" action="search.php">
                     <h3>Sök platser</h3>
-                    <input id="search" type="text" name="searchtext" placeholder="Sök...">
+                    <input id="search" type="text" name="searchtext" placeholder="⌕ Sök...">
                     <input id="submit" type="submit" value="Sök">
                 </form>
 
 <?php
-        echo "<div id='searchContent'>"; 
+        //echo "<div id='searchContent'>"; 
 
 
             if (isset($_POST['searchtext'])) {
 				$search = $_POST['searchtext'];
                 
             if ($search == ""){
+                echo "<div id='searchContent'>";
                 echo "<p>Ange söktext</p>";
+                echo "</div>";
                 exit();
             }
                 
@@ -45,26 +48,30 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                         $lat = $row['lat'];
                         $lng = $row['lng'];
                         $pic = $row['pic'];
-						
-                        echo "<h3> Resultat: </h3>";
+                        $opening_hours = $row['opening_hours'];
+                        $star = $row['star'];
+						echo "<div id='searchContent'>";
+                        echo "<h4> Sökord: <i> $search</i> </h4><br>";
 						echo "<h3>";
 						echo $placeName;
 						echo "</h3>";
                         echo "<p><b>Betyg: </b>";
-                        echo $rating . "</p>";
+                        echo $rating . " " . $star . "</p>";
                         echo "</br>";
                         echo "<img src='$pic'>";
                         echo "</br>";
 						echo "<p><b>Info: </b> ";
 						echo $description . "</p>";
-						echo "</br>";
-                        echo "<p><b>Typ: </b>";
-                        echo $type . "</p>";
                         echo "</br>";
                         echo "<p><b>Adress: </b>";
 						echo $address . "</p>";
 						echo "</br>";
-					
+                        echo "<p> <b>Öppettider: </b>";
+                        echo $opening_hours . "</p>";
+                        echo "</br>";
+                        echo "<p><b>Typ: </b>";
+                        echo $type . "</p>";
+					    
                         
                         echo "<form action ='search.php' method='post'>";
                         echo '<h3>Betygsätt</h3>';
@@ -76,7 +83,8 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                 
                         echo "<input type='submit' name'submit' id='submit2' value='Rateit!'>";
                         echo "</form>";
-                                        
+                        echo '</div>';
+                        
    
 					}
                     
@@ -84,9 +92,6 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                     
                 }
             
-
-
-                    
                     if (isset($_POST['submit'])){
                      
                         if(!empty($_POST['rate'])){ /*hämta knappens värde*/
@@ -105,14 +110,14 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 				
                     }
         
-        echo "</div>";
+        //echo "</div>";
         
 ?>
 
                 
-
+        </div><!--#container-->
         
-    </div><!--#container-->
+    
 
 
 

@@ -4,6 +4,7 @@
 	padding: 0;
 	-moz-box-sizing: border-box;
 	 	 box-sizing: border-box;
+    overflow:none;
 }
 
 body{
@@ -11,7 +12,67 @@ body{
     background:#e6e6e6;
 
 
+}
 
+#map-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity:0.3;
+}
+
+#map
+{
+    width: 100%;
+    height: 100%;
+    
+}
+#container
+{
+    
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+  
+}
+
+    #container p {
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: left; 
+}
+
+
+//kartan
+
+#map {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+
+}
+
+
+/*Karta - infowindow*/
+
+.gm-style-iw {
+    width: 200px; 
+    //min-height: 150px;
+    margin: 0 0 0 3px;
+    overflow:none;
+    line-height:25px;
+    
+    img{
+        width:90%;
+    
+    
+    }
 }
 
 // inporterar rutnätet och 
@@ -37,6 +98,49 @@ body{
     float:left;
 }
 
+
+
+
+ /*add.php*/   
+#searchResult{
+        width:200px;
+        height:220px;
+        float:left;
+        margin-right:5px;
+        padding-left: 5px;
+        //border: 1px solid #000;
+        img{
+          width:90%;  
+           
+        }
+        
+        h4{
+            margin-top:9px;
+            margin-bottom:10px;
+        
+        
+        }
+        
+} 
+/*om-sidan*/
+
+#om{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 292px;
+    margin-left: -2px;
+    margin-top: 80px;
+    margin-bottom:5px;
+    padding: 5px 8px 15px 12px;
+
+
+
+}
+
     
 #searchContent{
     background-color: #f6f6f6;
@@ -45,23 +149,41 @@ body{
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 280px;
-    margin-left: -4px;
+    width: 292px;
+    margin-left: -2px;
     margin-top: 2px;
+    margin-bottom:5px;
     padding: 5px 8px 15px 12px;
+    
+        img{
+        
+        margin-left: -2px;
+    
+    
+        }
+    
+        h4{
+            margin-top: 5px;
+            color: $rosa;
+        }
     }
 
-#places{
+
+#places  {
+    display:none;
     background-color: #f6f6f6;
     background-image: linear-gradient(top, #f6f6f6, #eae8e8);
     border-radius: 15px;    
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 300px;
+    width: 295px;
+    height:100px;
     float: left;
-    margin-left: -4px;
-    margin-top: 2px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    margin-left: -5px;
+    margin-top: 75px;
     padding: 5px 8px 15px 12px;
 }
 
@@ -76,10 +198,10 @@ body{
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;            
-    width: 280px;
-    height: 90px;
+    width: 295px;
+    height: 120px;
     padding: 5px;
-    margin: 15px 0 0 -5px;
+    margin: 80px 0 0 -3px;
     overflow: hidden; /* Clear floats */
     
     h3{
@@ -89,14 +211,14 @@ body{
 
 #search, 
 #submit {
-    float: left;
+    float: none;
 }
 
 #search {
     padding: 5px 9px;
     margin: 2px 0 0 5px;
     height: 23px;
-    width: 190px;
+    width: 270px;
     border: 1px solid #a4c3ca;
     font: normal 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
@@ -117,9 +239,9 @@ body{
     /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
                 0 1px 0 rgba(255, 255, 255, 0.3) inset;*/
     height: 23px;
-    margin: 2px 0 0 10px;
+    margin: 10px 0 0 5px;
     padding: 0;
-    width: 55px;
+    width: 270px;
     cursor: pointer;
     font: bold 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #fff;    
@@ -207,7 +329,7 @@ body{
     border-color: #dedede #bababa #aaa #bababa;            
     width: 300px;
     padding: 5px;
-    margin: 15px 0 0 -5px;
+    margin: 75px 0 5px -6px;
     overflow: hidden; /* Clear floats */
     
     p{
@@ -273,13 +395,7 @@ body{
        border: 0;  /* Small centering fix for Firefox */
 }
 
-/*Karta - infowindow*/
 
-.gm-style-iw {
-    width: 200px; 
-    //min-height: 150px;
-    margin: 0 0 0 3px;
-}
 
 /********************
 MOBILER & FALLBACK
@@ -300,8 +416,18 @@ you can add resource intensive styles.
 
 	// styles in 768up.scss
 	@import "768up";
+ 
     
-        /*div:ar*/
+
+//kartan
+#map {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block; }     
+
+/*div:ar*/
     
 #form{
     
@@ -322,9 +448,37 @@ you can add resource intensive styles.
     float: left;
     margin-left: 2px;
     overflow:auto;
-    margin-top: 15px;
+    margin-top: 80px;
     padding: 5px 8px 15px 12px;
 }
+    
+    
+#searchContent{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding: 5px 8px 15px 12px;
+    float: left;
+    margin-right: 10px;
+        
+        img{
+        
+        margin-left: -2px;
+    
+    
+        }
+        h4{
+            margin-top: 5px;
+            color: $rosa;
+        }
+    }
+      
     
     
 /*föreslå en plats-sidan*/
@@ -341,7 +495,7 @@ you can add resource intensive styles.
     border-color: #dedede #bababa #aaa #bababa;            
     width: 630px;
     padding: 5px 0 15px 10px;
-    margin: 15px 0 15px -5px;
+    margin: 80px 0 15px -5px;
     overflow: hidden; /* Clear floats */
     
     p{
@@ -422,8 +576,17 @@ you can add resource intensive styles.
 
 	// styles in 1030up.scss
 	//@import "1030up";
+
+
+//kartan
+#map {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block; }     
     
-    /*div:ar*/
+/*div:ar*/
     
 #form{
     
@@ -443,10 +606,39 @@ you can add resource intensive styles.
     float: left;
     margin-left: 2px;
     overflow:auto;
-    margin-top: 15px;
+    margin-top: 80px;
     padding: 5px 8px 15px 12px;
 }
     
+#searchContent{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding: 5px 8px 15px 12px;
+    float: left;
+    margin-right: 10px;
+    
+        h4{
+            margin-top: 5px;
+            color: $rosa;
+        }
+        
+            
+        img{
+        
+        margin-left: -2px;
+    
+    
+        }
+        
+    }
+       
     
 /*föreslå en plats-sidan*/
 
@@ -462,7 +654,7 @@ you can add resource intensive styles.
     border-color: #dedede #bababa #aaa #bababa;            
     width: 970px;
     padding: 5px 0 15px 10px;
-    margin: 15px 0 15px -5px;
+    margin: 80px 0 15px -5px;
     overflow: hidden; /* Clear floats */
     
     p{
@@ -544,32 +736,151 @@ This is for the larger monitors and possibly full screen viewers.
 
 	// styles in 1240up.scss
 	//@import "1240up";
+    
+/*logotyp*/
+
+#menu img {
+margin-left: 205px;
+padding-top: 5px;
+float: left;
+}
+
+
+#map-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity:0.3;
+}
+
+#map
+{
+    width: 100%;
+    height: 100%;
+    
+}
+#container
+{
+    width: 960px;
+    position: relative;
+    z-index: 1;
+    top:0;
+    left:0;
+    margin: 0 auto;
+    //border:1px solid #000;
+    padding-left: 10px;
+
+}
+    
+    
+    
+//kartan
+/*#map {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  overflow:none;
+}*/
+    
+    
+.gm-style-iw {
+    width: 270px; 
+    //min-height: 150px;
+    margin: 0 0 0 3px;
+    overflow:none;
+    line-height:25px;
+        
+    img{
+        width:100%;
+    
+    
+    }
+}
+    
 
     
-    
 /*div:ar*/
-    
+
+
 #form{
-    
-    width:990px;
+    width:970px;
     float:left;
 }    
 
-#places{
+#places  {
+    display:inherit;
     background-color: #f6f6f6;
     background-image: linear-gradient(top, #f6f6f6, #eae8e8);
     border-radius: 15px;    
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 300px;
-    height: 630px;
+    width: 970px;
+    height:240px;
     float: left;
-    margin-left: 2px;
-    overflow:auto;
-    margin-top: 15px;
+    overflow-x: hidden; /*for horizontal scroll bar */
+    overflow-y:scroll;
+    margin-left: -5px;
+    margin-top: 80px;
     padding: 5px 8px 15px 12px;
 }
+
+ /*add.php*/   
+#searchResult{
+        width:200px;
+        height:220px;
+        float:left;
+        margin-right:5px;
+        padding-left: 5px;
+        //border: 1px solid #000;
+        img{
+            width:90%;
+            height:120px;
+        }
+        
+        h4{
+            margin-top:15px;
+            margin-bottom:10px;
+        
+        
+        }
+        
+}    
+
+/*-----------------*/
+#searchContent{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    width: 280px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding: 5px 8px 15px 12px;
+    float: left;
+    margin-right: 10px;
+    
+        h4{
+            margin-top: 5px;
+            color: $rosa;
+        }
+        
+            
+        img{
+        
+        margin-left: -2px;
+    
+    
+        }
+        
+    }
         
     
 /*föreslå en plats-sidan*/
@@ -586,7 +897,7 @@ This is for the larger monitors and possibly full screen viewers.
     border-color: #dedede #bababa #aaa #bababa;            
     width: 970px;
     padding: 5px 0 15px 10px;
-    margin: 15px 0 15px -5px;
+    margin: 5px 0 15px -5px;
     overflow: hidden; /* Clear floats */
     
     p{
@@ -655,6 +966,83 @@ This is for the larger monitors and possibly full screen viewers.
        border: 0;  /* Small centering fix for Firefox */
 }
 
+    
+/*sökfältet i search.php*/
+
+#searchbox
+{
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-radius: 15px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;            
+    width: 852px;
+    height: 120px;
+    padding: 5px;
+    margin: 80px 0 0 -3px;
+    overflow: hidden; /* Clear floats */
+    
+    
+    h3{
+     margin:8px;   
+    }
+}
+
+#search, 
+#submit {
+    float: left;
+}
+
+#search {
+    padding: 5px 9px;
+    margin: 2px 0 0 5px;
+    height: 40px;
+    width: 685px;
+    border: 1px solid #a4c3ca;
+    font: normal 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
+    background: #f1f1f1;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+/* ----------------------- */
+
+#submit
+{       
+    background-color: #66BBC0;
+    //background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 3px 3px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;*/
+    height: 39px;
+    margin: 2px 0 0 5px;
+    padding: 0;
+    width: 140px;
+    cursor: pointer;
+    font: bold 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #fff;    
+    
+}
+
+
+#submit:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
 
 
 
