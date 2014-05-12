@@ -216,7 +216,7 @@ body {
   border-width: 1px;
   border-style: solid;
   border-color: #dedede #bababa #aaa #bababa;
-  width: 32%;
+  width: 295px;
   margin-left: -2px;
   margin-top: 2px;
   margin-bottom: 5px;
@@ -278,7 +278,7 @@ body {
 
 /* ----------------------- */
 #submit {
-  background-color: #66BBC0;
+  background-color: #66bbc0;
   border-radius: 3px 3px 3px 3px;
   border-width: 1px;
   border-style: solid;
@@ -308,7 +308,7 @@ body {
 
 /*Betygsätt*/
 #submit2 {
-  background-color: #66BBC0;
+  background-color: #66bbc0;
   border-radius: 3px 3px 3px 3px;
   border-width: 1px;
   border-style: solid;
@@ -318,7 +318,7 @@ body {
   height: 23px;
   margin: 8px 0 0 1px;
   padding: 0;
-  width: 55px;
+  width: 70px;
   cursor: pointer;
   font: bold 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #fff; }
@@ -374,7 +374,7 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
 
 #submitAdd {
-  background-color: #66BBC0;
+  background-color: #66bbc0;
   border-radius: 3px 3px 3px 3px;
   border-width: 1px;
   border-style: solid;
@@ -655,7 +655,7 @@ you can add resource intensive styles.
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
 
   #submitAdd {
-    background-color: #66BBC0;
+    background-color: #66bbc0;
     border-radius: 3px 3px 3px 3px;
     border-width: 1px;
     border-style: solid;
@@ -718,7 +718,7 @@ you can add resource intensive styles.
 
   /* ----------------------- */
   #submit {
-    background-color: #66BBC0;
+    background-color: #66bbc0;
     border-radius: 3px 3px 3px 3px;
     border-width: 1px;
     border-style: solid;
@@ -754,7 +754,7 @@ you can add resource intensive styles.
 @media only screen and (min-width: 1030px) {
   /*logotyp*/
   #menu img {
-    margin-left: 45px;
+    margin-left: 72px;
     padding-top: 5px;
     float: left; }
 
@@ -772,7 +772,7 @@ you can add resource intensive styles.
     height: 100%; }
 
   #container {
-    width: 960px;
+    width: 890px;
     position: relative;
     z-index: 1;
     top: 0;
@@ -808,7 +808,7 @@ you can add resource intensive styles.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 970px;
+    width: 859px;
     height: 240px;
     float: left;
     overflow-x: hidden;
@@ -869,7 +869,7 @@ you can add resource intensive styles.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 970px;
+    width: 859px;
     padding: 5px 0 15px 10px;
     margin: 5px 0 15px -5px;
     overflow: hidden;
@@ -879,14 +879,14 @@ you can add resource intensive styles.
       padding-bottom: 2px;
       padding-top: 7px;
       color: #66bbc0;
-      font-size: 18px; }
+      font-size: 15px; }
     #addbox h3 {
       padding-left: 5px; }
 
   #insertText {
     padding: 5px 9px;
     margin: 2px 0 0 5px;
-    width: 900px;
+    width: 825px;
     border: 1px solid #a4c3ca;
     font: normal 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
@@ -894,7 +894,7 @@ you can add resource intensive styles.
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
 
   #submitAdd {
-    background-color: #66BBC0;
+    background-color: #66bbc0;
     border-radius: 3px 3px 3px 3px;
     border-width: 1px;
     border-style: solid;
@@ -904,7 +904,7 @@ you can add resource intensive styles.
     height: 23px;
     margin: 10px 0 0 5px;
     padding: 0;
-    width: 900px;
+    min-width: 825px;
     height: 35px;
     cursor: pointer;
     font: bold 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -931,7 +931,7 @@ you can add resource intensive styles.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 852px;
+    min-width: 828px;
     height: 120px;
     padding: 5px;
     margin: 80px 0 0 -3px;
@@ -948,7 +948,7 @@ you can add resource intensive styles.
     padding: 5px 9px;
     margin: 2px 0 0 5px;
     height: 40px;
-    width: 685px;
+    width: 660px;
     border: 1px solid #a4c3ca;
     font: normal 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
@@ -957,7 +957,7 @@ you can add resource intensive styles.
 
   /* ----------------------- */
   #submit {
-    background-color: #66BBC0;
+    background-color: #66bbc0;
     border-radius: 3px 3px 3px 3px;
     border-width: 1px;
     border-style: solid;
@@ -967,7 +967,7 @@ you can add resource intensive styles.
     height: 39px;
     margin: 2px 0 0 5px;
     padding: 0;
-    width: 140px;
+    min-width: 140px;
     cursor: pointer;
     font: bold 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #fff; }
@@ -1132,7 +1132,7 @@ This is for the larger monitors and possibly full screen viewers.
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
 
   #submitAdd {
-    background-color: #66BBC0;
+    background-color: #66bbc0;
     border-radius: 3px 3px 3px 3px;
     border-width: 1px;
     border-style: solid;
@@ -1195,7 +1195,7 @@ This is for the larger monitors and possibly full screen viewers.
 
   /* ----------------------- */
   #submit {
-    background-color: #66BBC0;
+    background-color: #66bbc0;
     border-radius: 3px 3px 3px 3px;
     border-width: 1px;
     border-style: solid;

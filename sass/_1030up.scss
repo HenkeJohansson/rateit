@@ -2,7 +2,7 @@
 /*logotyp*/
 
 #menu img {
-margin-left: 45px;
+margin-left: 72px;
 padding-top: 5px;
 float: left;
 }
@@ -26,7 +26,7 @@ float: left;
 }
 #container
 {
-    width: 960px;
+    width: 890px;
     position: relative;
     z-index: 1;
     top:0;
@@ -83,7 +83,7 @@ float: left;
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 970px;
+    width: 859px;
     height:240px;
     float: left;
     overflow-x: hidden; /*for horizontal scroll bar */
@@ -170,7 +170,7 @@ float: left;
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;            
-    width: 970px;
+    width: 859px;
     padding: 5px 0 15px 10px;
     margin: 5px 0 15px -5px;
     overflow: hidden; /* Clear floats */
@@ -180,7 +180,7 @@ float: left;
         padding-bottom:2px;
         padding-top:7px;
         color: $turkos;
-        font-size: 18px;
+        font-size: 15px;
     }
     
     h3{
@@ -194,7 +194,7 @@ float: left;
     padding: 5px 9px;
     margin: 2px 0 0 5px;
     //height: 23px;
-    width: 900px;
+    width: 825px;
     border: 1px solid #a4c3ca;
     font: normal 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
@@ -206,7 +206,7 @@ float: left;
 
 #submitAdd
 {       
-    background-color: #66BBC0;
+    background-color: $turkos;
     //background-image: linear-gradient(#95d788, #6cbb6b);
     border-radius: 3px 3px 3px 3px;    
     border-width: 1px;
@@ -217,7 +217,7 @@ float: left;
     height: 23px;
     margin: 10px 0 0 5px;
     padding: 0;
-    width: 900px;
+    min-width: 825px;
     height: 35px;
     cursor: pointer;
     font: bold 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -252,7 +252,7 @@ float: left;
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;            
-    width: 852px;
+    min-width: 828px;
     height: 120px;
     padding: 5px;
     margin: 80px 0 0 -3px;
@@ -273,7 +273,7 @@ float: left;
     padding: 5px 9px;
     margin: 2px 0 0 5px;
     height: 40px;
-    width: 685px;
+    width: 660px;
     border: 1px solid #a4c3ca;
     font: normal 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
@@ -285,7 +285,7 @@ float: left;
 
 #submit
 {       
-    background-color: #66BBC0;
+    background-color: $turkos;
     //background-image: linear-gradient(#95d788, #6cbb6b);
     border-radius: 3px 3px 3px 3px;    
     border-width: 1px;
@@ -296,7 +296,7 @@ float: left;
     height: 39px;
     margin: 2px 0 0 5px;
     padding: 0;
-    width: 140px;
+    min-width: 140px;
     cursor: pointer;
     font: bold 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #fff;    
