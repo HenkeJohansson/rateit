@@ -149,7 +149,7 @@ body{
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 32%;
+    width: 295px;
     margin-left: -2px;
     margin-top: 2px;
     margin-bottom:5px;
@@ -230,7 +230,7 @@ body{
 
 #submit
 {       
-    background-color: #66BBC0;
+    background-color: $turkos;
     //background-image: linear-gradient(#95d788, #6cbb6b);
     border-radius: 3px 3px 3px 3px;    
     border-width: 1px;
@@ -269,7 +269,7 @@ body{
 
 #submit2
 {       
-    background-color: #66BBC0;
+    background-color: $turkos;
     //background-image: linear-gradient(#95d788, #6cbb6b);
     border-radius: 3px 3px 3px 3px;    
     border-width: 1px;
@@ -280,7 +280,7 @@ body{
     height: 23px;
     margin: 8px 0 0 1px;
     padding: 0;
-    width: 55px;
+    width: 70px;
     cursor: pointer;
     font: bold 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #fff;    
@@ -361,7 +361,7 @@ body{
 
 #submitAdd
 {       
-    background-color: #66BBC0;
+    background-color: $turkos;
     //background-image: linear-gradient(#95d788, #6cbb6b);
     border-radius: 3px 3px 3px 3px;    
     border-width: 1px;
