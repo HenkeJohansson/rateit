@@ -256,7 +256,7 @@ body {
   border-width: 1px;
   border-style: solid;
   border-color: #dedede #bababa #aaa #bababa;
-  width: 292px;
+  width: 32%;
   margin-left: -2px;
   margin-top: 2px;
   margin-bottom: 5px;
@@ -598,30 +598,9 @@ in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
-  /*
-  * CSS:en för upplösningar från
-  * width: 768px och uppåt.
-  *
-  */
-  #container {
-    margin: 0 15px;
-  }
-  #container .bit-3 {
-    margin-bottom: 50px;
-    max-height: 350px;
-    overflow: hidden;
-  }
-  #container .bit-3 img {
-    width: 100%;
-  }
-  #container p {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
   /*logotyp*/
   #menu img {
-    margin-left: 145px;
+    margin-left: 13%;
     padding-top: 5px;
     float: left;
   }
@@ -717,7 +696,7 @@ you can add resource intensive styles.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 20%;
+    width: 32%;
     margin-left: -4px;
     margin-top: 5px;
     padding: 5px 8px 15px 12px;
@@ -734,7 +713,7 @@ you can add resource intensive styles.
   }
 
   #searchContent1 {
-    width: 960px;
+    width: 851px;
     float: left;
   }
 
@@ -819,11 +798,11 @@ you can add resource intensive styles.
   #searchbox {
     background-color: #f6f6f6;
     /*background-image: linear-gradient(top, #f6f6f6, #eae8e8);*/
-    /*border-radius: 15px;    */
+    border-radius: 15px;
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 785px;
+    max-width: 755px;
     height: 120px;
     padding: 5px;
     margin: 80px 0 0 -3px;
@@ -990,7 +969,7 @@ you can add resource intensive styles.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 280px;
+    width: 32%;
     margin-left: -4px;
     margin-top: 5px;
     padding: 5px 8px 15px 12px;
@@ -1006,7 +985,7 @@ you can add resource intensive styles.
   }
 
   #searchContent1 {
-    width: 960px;
+    width: 851px;
     float: left;
   }
 
@@ -1164,7 +1143,7 @@ This is for the larger monitors and possibly full screen viewers.
 @media only screen and (min-width: 1240px) {
   /*logotyp*/
   #menu img {
-    margin-left: 205px;
+    margin-left: 13.5%;
     padding-top: 5px;
     float: left;
   }
@@ -1185,7 +1164,8 @@ This is for the larger monitors and possibly full screen viewers.
   }
 
   #container {
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
     position: relative;
     z-index: 1;
     top: 0;
@@ -1260,7 +1240,7 @@ This is for the larger monitors and possibly full screen viewers.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 280px;
+    width: 32%;
     margin-left: -4px;
     margin-top: 5px;
     padding: 5px 8px 15px 12px;
@@ -1276,8 +1256,8 @@ This is for the larger monitors and possibly full screen viewers.
   }
 
   #searchContent1 {
-    width: 960px;
-    float: left;
+    width: 855px;
+    margin: 0 auto;
   }
 
   .group:after {
@@ -1365,7 +1345,7 @@ This is for the larger monitors and possibly full screen viewers.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 852px;
+    max-width: 833px;
     height: 120px;
     padding: 5px;
     margin: 80px 0 0 -3px;

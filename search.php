@@ -11,7 +11,7 @@ include 'php/includes/connect.inc.php'; ?>
 	<script src="js/getPlaces.js"></script>
 	<script src="js/main.js"></script>
 
-    <div id="container">
+    <div id="container" class='group'>
             
                 <form method="post" id="searchbox" action="search.php">
                     <h3>Sök platser</h3>
@@ -20,9 +20,7 @@ include 'php/includes/connect.inc.php'; ?>
                 </form>
 
 <?php
-        echo "<div id='searchContent1'>"; 
-        echo "<div id='clearfix'></div>";
-
+        echo "<div id='searchContent1' class='group'>";
 
             if (isset($_POST['searchtext'])) {
 				$search = $_POST['searchtext'];
@@ -52,7 +50,7 @@ include 'php/includes/connect.inc.php'; ?>
                         $opening_hours = $row['opening_hours'];
                         $star = $row['star'];
 						
-                        echo "<div id='searchContent' class='group'>";
+                        echo "<div id='searchContent'>";
                         echo "<h4> Sökord: <i> $search</i> </h4><br>";
 						echo "<h3>";
 						echo $placeName;
