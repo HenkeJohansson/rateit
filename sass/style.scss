@@ -824,7 +824,7 @@ float: left;
     height:240px;
     float: left;
     overflow-x: hidden; /*for horizontal scroll bar */
-    overflow-y: auto; /*for hiding vertical scroll bar */
+    overflow-y:scroll;
     margin-left: -5px;
     margin-top: 80px;
     padding: 5px 8px 15px 12px;
