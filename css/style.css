@@ -1,13 +1,15 @@
-@charset "CP850";
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  overflow: none; }
+  overflow: none;
+}
 
 body {
-  background: #e6e6e6; }
+  background: #e6e6e6;
+}
 
 #map-container {
   width: 100%;
@@ -16,38 +18,45 @@ body {
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 0.3; }
+  opacity: 0.3;
+}
 
 #map {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 #container {
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 0; }
+  left: 0;
+}
 
 #container p {
   font-size: 15px;
   line-height: 1.5;
-  text-align: left; }
+  text-align: left;
+}
 
 #map {
   z-index: 0;
   height: 100%;
   width: 100%;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+}
 
 /*Karta - infowindow*/
 .gm-style-iw {
   width: 200px;
   margin: 0 0 0 3px;
   overflow: none;
-  line-height: 25px; }
-  .gm-style-iw img {
-    width: 90%; }
+  line-height: 25px;
+}
+.gm-style-iw img {
+  width: 90%;
+}
 
 /*
 *
@@ -65,60 +74,76 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* Set the width of the grid */
 .frame {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 /* Attribute selector */
 [class*='bit-'] {
   float: left;
-  padding: 0.3em; }
+  padding: 0.3em;
+}
 
 /* Floats last ".bit-" to the right */
 /* Clearfix */
 .frame:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 /* Main Widths */
 .bit-1 {
-  width: 100%; }
+  width: 100%;
+}
 
 .bit-2 {
-  width: 50%; }
+  width: 50%;
+}
 
 .bit-3 {
-  width: 33.33%; }
+  width: 33.33%;
+}
 
 .bit-4 {
-  width: 25%; }
+  width: 25%;
+}
 
 .bit-5 {
-  width: 20%; }
+  width: 20%;
+}
 
 .bit-6 {
-  width: 16.66667%; }
+  width: 16.66667%;
+}
 
 .bit-7 {
-  width: 14.28571%; }
+  width: 14.28571%;
+}
 
 .bit-8 {
-  width: 12.5%; }
+  width: 12.5%;
+}
 
 .bit-9 {
-  width: 11.11111%; }
+  width: 11.11111%;
+}
 
 .bit-10 {
-  width: 10%; }
+  width: 10%;
+}
 
 .bit-11 {
-  width: 9.09091%; }
+  width: 9.09091%;
+}
 
 .bit-12 {
-  width: 8.33%; }
+  width: 8.33%;
+}
 
 /* Landscape mobile & down */
 @media (max-width: 30em) {
@@ -134,7 +159,9 @@ body {
   .bit-10,
   .bit-11,
   .bit-12 {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 /* Portrait tablet to landscape */
 @media (min-width: 30em) and (max-width: 50em) {
   .bit-4,
@@ -142,7 +169,8 @@ body {
   .bit-8,
   .bit-10,
   .bit-12 {
-    width: 50%; }
+    width: 50%;
+  }
 
   .bit-1,
   .bit-2,
@@ -151,18 +179,23 @@ body {
   .bit-7,
   .bit-9,
   .bit-11 {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 /* Landscape to small desktop */
 @media (min-width: 50em) and (max-width: 68.75em) {
   .bit-2,
   .bit-7 {
-    width: 100%; }
+    width: 100%;
+  }
 
   .bit-4,
   .bit-8,
   .bit-10,
   .bit-12 {
-    width: 50%; } }
+    width: 50%;
+  }
+}
 /*
 * Variabler för färgkoder
 *
@@ -170,17 +203,20 @@ body {
 *
 */
 .clearfix {
-  clear: both; }
+  clear: both;
+}
 
 .group:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 /*div:ar*/
 #form {
   width: 300px;
-  float: left; }
+  float: left;
+}
 
 /*add.php*/
 #searchResult {
@@ -188,12 +224,15 @@ body {
   height: 220px;
   float: left;
   margin-right: 5px;
-  padding-left: 5px; }
-  #searchResult img {
-    width: 90%; }
-  #searchResult h4 {
-    margin-top: 9px;
-    margin-bottom: 10px; }
+  padding-left: 5px;
+}
+#searchResult img {
+  width: 90%;
+}
+#searchResult h4 {
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
 
 /*om-sidan*/
 #om {
@@ -207,7 +246,8 @@ body {
   margin-left: -2px;
   margin-top: 80px;
   margin-bottom: 5px;
-  padding: 5px 8px 15px 12px; }
+  padding: 5px 8px 15px 12px;
+}
 
 #searchContent {
   background-color: #f6f6f6;
@@ -220,12 +260,15 @@ body {
   margin-left: -2px;
   margin-top: 2px;
   margin-bottom: 5px;
-  padding: 5px 8px 15px 12px; }
-  #searchContent img {
-    margin-left: -2px; }
-  #searchContent h4 {
-    margin-top: 5px;
-    color: #f9bcbe; }
+  padding: 5px 8px 15px 12px;
+}
+#searchContent img {
+  margin-left: -2px;
+}
+#searchContent h4 {
+  margin-top: 5px;
+  color: #f9bcbe;
+}
 
 #places {
   display: none;
@@ -242,7 +285,8 @@ body {
   overflow-x: hidden;
   margin-left: -5px;
   margin-top: 75px;
-  padding: 5px 8px 15px 12px; }
+  padding: 5px 8px 15px 12px;
+}
 
 /*sökfältet i search.php*/
 #searchbox {
@@ -252,18 +296,20 @@ body {
   border-width: 1px;
   border-style: solid;
   border-color: #dedede #bababa #aaa #bababa;
-  width: 295px;
   height: 120px;
   padding: 5px;
   margin: 80px 0 0 -3px;
   overflow: hidden;
-  /* Clear floats */ }
-  #searchbox h3 {
-    margin: 8px; }
+  /* Clear floats */
+}
+#searchbox h3 {
+  margin: 8px;
+}
 
 #search,
 #submit {
-  float: none; }
+  float: none;
+}
 
 #search {
   padding: 5px 9px;
@@ -274,7 +320,8 @@ body {
   font: normal 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
   background: #f1f1f1;
   border-radius: 3px 3px 3px 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white;
+}
 
 /* ----------------------- */
 #submit {
@@ -291,20 +338,24 @@ body {
   width: 270px;
   cursor: pointer;
   font: bold 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #fff; }
+  color: #fff;
+}
 
 #submit:hover {
   background-color: #95d788;
-  background-image: linear-gradient(#6cbb6b, #95d788); }
+  background-image: linear-gradient(#6cbb6b, #95d788);
+}
 
 #submit:active {
   background: #95d788;
   outline: none;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
 
 #submit::-moz-focus-inner {
   border: 0;
-  /* Small centering fix for Firefox */ }
+  /* Small centering fix for Firefox */
+}
 
 /*Betygsätt*/
 #submit2 {
@@ -321,25 +372,31 @@ body {
   width: 55px;
   cursor: pointer;
   font: bold 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #fff; }
+  color: #fff;
+}
 
 #submit2:hover {
   background-color: #95d788;
-  background-image: linear-gradient(#6cbb6b, #95d788); }
+  background-image: linear-gradient(#6cbb6b, #95d788);
+}
 
 #submit2:active {
   background: #95d788;
   outline: none;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
 
 #submit2::-moz-focus-inner {
   border: 0;
-  /* Small centering fix for Firefox */ }
+  /* Small centering fix for Firefox */
+}
 
 .bit-3 h3 {
-  margin-left: 0px; }
+  margin-left: 0px;
+}
 .bit-3 p {
-  font-size: 15px; }
+  font-size: 15px;
+}
 
 /*föreslå en plats-sidan*/
 /*formulär*/
@@ -354,14 +411,17 @@ body {
   padding: 5px;
   margin: 75px 0 5px -6px;
   overflow: hidden;
-  /* Clear floats */ }
-  #addbox p {
-    padding-left: 5px;
-    padding-bottom: 2px;
-    padding-top: 7px;
-    color: #66bbc0; }
-  #addbox h3 {
-    padding-left: 5px; }
+  /* Clear floats */
+}
+#addbox p {
+  padding-left: 5px;
+  padding-bottom: 2px;
+  padding-top: 7px;
+  color: #66bbc0;
+}
+#addbox h3 {
+  padding-left: 5px;
+}
 
 #insertText {
   padding: 5px 9px;
@@ -371,7 +431,8 @@ body {
   font: normal 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
   background: #f1f1f1;
   border-radius: 3px 3px 3px 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white;
+}
 
 #submitAdd {
   background-color: #66BBC0;
@@ -387,20 +448,24 @@ body {
   width: 275px;
   cursor: pointer;
   font: bold 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #fff; }
+  color: #fff;
+}
 
 #submitAdd:hover {
   background-color: #95d788;
-  background-image: linear-gradient(#6cbb6b, #95d788); }
+  background-image: linear-gradient(#6cbb6b, #95d788);
+}
 
 #submitAdd:active {
   background: #95d788;
   outline: none;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
 
 #submitAdd::-moz-focus-inner {
   border: 0;
-  /* Small centering fix for Firefox */ }
+  /* Small centering fix for Firefox */
+}
 
 /********************
 MOBILER & FALLBACK
@@ -412,17 +477,20 @@ html, body {
   height: 100%;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
-  background: #e6e6e6; }
+  background: #e6e6e6;
+}
 
 h1, h2, h3, h5 {
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 0px;
-  color: #66bbc0; }
+  color: #66bbc0;
+}
 
 h4 {
   margin-bottom: -15px;
-  color: #66bbc0; }
+  color: #66bbc0;
+}
 
 /***************************
 MENYN
@@ -437,34 +505,40 @@ MENYN
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
-  #menu p {
-    color: #f9bcbe;
-    font-size: 26px;
-    float: left;
-    margin-left: 20px;
-    margin-top: 18px; }
-  #menu img {
-    margin-left: 20px;
-    padding-top: 5px;
-    float: left; }
-  #menu #cat-butt {
-    float: right;
-    color: white;
-    font-size: 32px;
-    margin-right: 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: all 0.7s; }
-  #menu :after {
-    clear: both; }
+  user-select: none;
+}
+#menu p {
+  color: #f9bcbe;
+  font-size: 26px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 18px;
+}
+#menu img {
+  margin-left: 20px;
+  padding-top: 5px;
+  float: left;
+}
+#menu #cat-butt {
+  float: right;
+  color: white;
+  font-size: 32px;
+  margin-right: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+#menu :after {
+  clear: both;
+}
 
 #map {
   z-index: 0;
   height: 100%;
   width: 100%;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+}
 
 #categories {
   z-index: 2;
@@ -474,36 +548,47 @@ MENYN
   top: 70px;
   right: -100%;
   background: #f9bcbe;
-  transition: all 0.7s; }
-  #categories ul {
-    padding-top: 10px; }
-    #categories ul li {
-      background: #fccfcf;
-      padding-left: 10px;
-      list-style: none;
-      margin-bottom: 2px; }
-      #categories ul li:hover {
-        cursor: pointer; }
-      #categories ul li:hover {
-        background: #f9bcbe; }
-      #categories ul li a {
-        font-size: 22px;
-        text-decoration: none;
-        color: white; }
-  #categories #botten {
-    position: absolute;
-    bottom: 70px;
-    width: 100%; }
+  transition: all 0.7s;
+}
+#categories ul {
+  padding-top: 10px;
+}
+#categories ul li {
+  background: #fccfcf;
+  padding-left: 10px;
+  list-style: none;
+  margin-bottom: 2px;
+}
+#categories ul li:hover {
+  cursor: pointer;
+}
+#categories ul li:hover {
+  background: #f9bcbe;
+}
+#categories ul li a {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+}
+#categories #botten {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+}
 
 #container {
-  margin: 0 15px; }
-  #container .bit-3 {
-    margin-bottom: 30px; }
-    #container .bit-3 img {
-      width: 100%; }
-  #container p {
-    font-size: 15px;
-    line-height: 1.5; }
+  margin: 0 15px;
+}
+#container .bit-3 {
+  margin-bottom: 30px;
+}
+#container .bit-3 img {
+  width: 100%;
+}
+#container p {
+  font-size: 15px;
+  line-height: 1.5;
+}
 
 /*********************
 TABLET & MINDRE LAPTOPS
@@ -516,7 +601,8 @@ you can add resource intensive styles.
   #menu img {
     margin-left: 13%;
     padding-top: 5px;
-    float: left; }
+    float: left;
+  }
 
   #map-container {
     width: 100%;
@@ -525,20 +611,23 @@ you can add resource intensive styles.
     top: 0;
     left: 0;
     z-index: 0;
-    opacity: 0.3; }
+    opacity: 0.3;
+  }
 
   #map {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+  }
 
   #container {
-    width: 750px;
+    width: 650px;
     position: relative;
     z-index: 1;
     top: 0;
     left: 0;
     margin: 0 auto;
-    padding-left: 10px; }
+    padding-left: 10px;
+  }
 
   /*#map {
     z-index: 0;
@@ -552,14 +641,17 @@ you can add resource intensive styles.
     width: 270px;
     margin: 0 0 0 3px;
     overflow: none;
-    line-height: 25px; }
-    .gm-style-iw img {
-      width: 100%; }
+    line-height: 25px;
+  }
+  .gm-style-iw img {
+    width: 100%;
+  }
 
   /*div:ar*/
   #form {
     width: 970px;
-    float: left; }
+    float: left;
+  }
 
   #places {
     display: inherit;
@@ -568,7 +660,7 @@ you can add resource intensive styles.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 720px;
+    width: 654px;
     height: 240px;
     float: left;
     overflow-x: hidden;
@@ -576,7 +668,8 @@ you can add resource intensive styles.
     overflow-y: scroll;
     margin-left: -5px;
     margin-top: 80px;
-    padding: 5px 8px 15px 12px; }
+    padding: 5px 8px 15px 12px;
+  }
 
   /*add.php*/
   #searchResult {
@@ -584,13 +677,16 @@ you can add resource intensive styles.
     height: 220px;
     float: left;
     margin-right: 5px;
-    padding-left: 5px; }
-    #searchResult img {
-      width: 90%;
-      height: 120px; }
-    #searchResult h4 {
-      margin-top: 15px;
-      margin-bottom: 10px; }
+    padding-left: 5px;
+  }
+  #searchResult img {
+    width: 90%;
+    height: 120px;
+  }
+  #searchResult h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 
   /*-----------------*/
   #searchContent {
@@ -599,27 +695,32 @@ you can add resource intensive styles.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 32%;
+    width: 49%;
     margin-left: -4px;
     margin-top: 5px;
     padding: 5px 8px 15px 12px;
     float: left;
-    margin-right: 10px; }
-    #searchContent h4 {
-      margin-top: 5px;
-      color: #f9bcbe; }
-    #searchContent img {
-      margin-left: -2px;
-      max-width: 100%; }
+    margin-right: 10px;
+  }
+  #searchContent h4 {
+    margin-top: 5px;
+    color: #f9bcbe;
+  }
+  #searchContent img {
+    margin-left: -2px;
+    max-width: 100%;
+  }
 
   #searchContent1 {
-    width: 851px;
-    float: left; }
+    width: 648px;
+    float: left;
+  }
 
   .group:after {
     content: "";
     display: table;
-    clear: both; }
+    clear: both;
+  }
 
   /*föreslå en plats-sidan*/
   /*formulär*/
@@ -630,19 +731,22 @@ you can add resource intensive styles.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    width: 720px;
+    width: 654px;
     padding: 5px 0 15px 10px;
     margin: 5px 0 15px -5px;
     overflow: hidden;
-    /* Clear floats */ }
-    #addbox p {
-      padding-left: 5px;
-      padding-bottom: 2px;
-      padding-top: 7px;
-      color: #66bbc0;
-      font-size: 18px; }
-    #addbox h3 {
-      padding-left: 5px; }
+    /* Clear floats */
+  }
+  #addbox p {
+    padding-left: 5px;
+    padding-bottom: 2px;
+    padding-top: 7px;
+    color: #66bbc0;
+    font-size: 18px;
+  }
+  #addbox h3 {
+    padding-left: 5px;
+  }
 
   #insertText {
     padding: 5px 9px;
@@ -652,7 +756,8 @@ you can add resource intensive styles.
     font: normal 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
     border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white;
+  }
 
   #submitAdd {
     background-color: #66BBC0;
@@ -669,20 +774,24 @@ you can add resource intensive styles.
     height: 35px;
     cursor: pointer;
     font: bold 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: #fff; }
+    color: #fff;
+  }
 
   #submitAdd:hover {
     background-color: #95d788;
-    background-image: linear-gradient(#6cbb6b, #95d788); }
+    background-image: linear-gradient(#6cbb6b, #95d788);
+  }
 
   #submitAdd:active {
     background: #95d788;
     outline: none;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  }
 
   #submitAdd::-moz-focus-inner {
     border: 0;
-    /* Small centering fix for Firefox */ }
+    /* Small centering fix for Firefox */
+  }
 
   /*sökfältet i search.php*/
   #searchbox {
@@ -692,18 +801,21 @@ you can add resource intensive styles.
     border-width: 1px;
     border-style: solid;
     border-color: #dedede #bababa #aaa #bababa;
-    max-width: 755px;
+    max-width: 648px;
     height: 120px;
     padding: 5px;
     margin: 80px 0 0 -3px;
     overflow: hidden;
-    /* Clear floats */ }
-    #searchbox h3 {
-      margin: 8px; }
+    /* Clear floats */
+  }
+  #searchbox h3 {
+    margin: 8px;
+  }
 
   #search,
   #submit {
-    float: left; }
+    float: left;
+  }
 
   #search {
     padding: 5px 9px;
@@ -714,7 +826,8 @@ you can add resource intensive styles.
     font: normal 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
     border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white;
+  }
 
   /* ----------------------- */
   #submit {
@@ -731,20 +844,25 @@ you can add resource intensive styles.
     max-width: 15%;
     cursor: pointer;
     font: bold 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: #fff; }
+    color: #fff;
+  }
 
   #submit:hover {
     background-color: #95d788;
-    background-image: linear-gradient(#6cbb6b, #95d788); }
+    background-image: linear-gradient(#6cbb6b, #95d788);
+  }
 
   #submit:active {
     background: #95d788;
     outline: none;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  }
 
   #submit::-moz-focus-inner {
     border: 0;
-    /* Small centering fix for Firefox */ } }
+    /* Small centering fix for Firefox */
+  }
+}
 /*********************
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -756,7 +874,8 @@ you can add resource intensive styles.
   #menu img {
     margin-left: 45px;
     padding-top: 5px;
-    float: left; }
+    float: left;
+  }
 
   #map-container {
     width: 100%;
@@ -765,11 +884,13 @@ you can add resource intensive styles.
     top: 0;
     left: 0;
     z-index: 0;
-    opacity: 0.3; }
+    opacity: 0.3;
+  }
 
   #map {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+  }
 
   #container {
     width: 960px;
@@ -778,7 +899,8 @@ you can add resource intensive styles.
     top: 0;
     left: 0;
     margin: 0 auto;
-    padding-left: 10px; }
+    padding-left: 10px;
+  }
 
   /*#map {
     z-index: 0;
@@ -792,14 +914,17 @@ you can add resource intensive styles.
     width: 270px;
     margin: 0 0 0 3px;
     overflow: none;
-    line-height: 25px; }
-    .gm-style-iw img {
-      width: 100%; }
+    line-height: 25px;
+  }
+  .gm-style-iw img {
+    width: 100%;
+  }
 
   /*div:ar*/
   #form {
     width: 970px;
-    float: left; }
+    float: left;
+  }
 
   #places {
     display: inherit;
@@ -816,7 +941,8 @@ you can add resource intensive styles.
     overflow-y: scroll;
     margin-left: -5px;
     margin-top: 80px;
-    padding: 5px 8px 15px 12px; }
+    padding: 5px 8px 15px 12px;
+  }
 
   /*add.php*/
   #searchResult {
@@ -824,13 +950,16 @@ you can add resource intensive styles.
     height: 220px;
     float: left;
     margin-right: 5px;
-    padding-left: 5px; }
-    #searchResult img {
-      width: 90%;
-      height: 120px; }
-    #searchResult h4 {
-      margin-top: 15px;
-      margin-bottom: 10px; }
+    padding-left: 5px;
+  }
+  #searchResult img {
+    width: 90%;
+    height: 120px;
+  }
+  #searchResult h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 
   /*-----------------*/
   #searchContent {
@@ -844,21 +973,26 @@ you can add resource intensive styles.
     margin-top: 5px;
     padding: 5px 8px 15px 12px;
     float: left;
-    margin-right: 10px; }
-    #searchContent h4 {
-      margin-top: 5px;
-      color: #f9bcbe; }
-    #searchContent img {
-      margin-left: -2px; }
+    margin-right: 10px;
+  }
+  #searchContent h4 {
+    margin-top: 5px;
+    color: #f9bcbe;
+  }
+  #searchContent img {
+    margin-left: -2px;
+  }
 
   #searchContent1 {
     width: 851px;
-    float: left; }
+    float: left;
+  }
 
   .group:after {
     content: "";
     display: table;
-    clear: both; }
+    clear: both;
+  }
 
   /*föreslå en plats-sidan*/
   /*formulär*/
@@ -873,15 +1007,18 @@ you can add resource intensive styles.
     padding: 5px 0 15px 10px;
     margin: 5px 0 15px -5px;
     overflow: hidden;
-    /* Clear floats */ }
-    #addbox p {
-      padding-left: 5px;
-      padding-bottom: 2px;
-      padding-top: 7px;
-      color: #66bbc0;
-      font-size: 18px; }
-    #addbox h3 {
-      padding-left: 5px; }
+    /* Clear floats */
+  }
+  #addbox p {
+    padding-left: 5px;
+    padding-bottom: 2px;
+    padding-top: 7px;
+    color: #66bbc0;
+    font-size: 18px;
+  }
+  #addbox h3 {
+    padding-left: 5px;
+  }
 
   #insertText {
     padding: 5px 9px;
@@ -891,7 +1028,8 @@ you can add resource intensive styles.
     font: normal 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
     border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white;
+  }
 
   #submitAdd {
     background-color: #66BBC0;
@@ -908,20 +1046,24 @@ you can add resource intensive styles.
     height: 35px;
     cursor: pointer;
     font: bold 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: #fff; }
+    color: #fff;
+  }
 
   #submitAdd:hover {
     background-color: #95d788;
-    background-image: linear-gradient(#6cbb6b, #95d788); }
+    background-image: linear-gradient(#6cbb6b, #95d788);
+  }
 
   #submitAdd:active {
     background: #95d788;
     outline: none;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  }
 
   #submitAdd::-moz-focus-inner {
     border: 0;
-    /* Small centering fix for Firefox */ }
+    /* Small centering fix for Firefox */
+  }
 
   /*sökfältet i search.php*/
   #searchbox {
@@ -936,13 +1078,16 @@ you can add resource intensive styles.
     padding: 5px;
     margin: 80px 0 0 -3px;
     overflow: hidden;
-    /* Clear floats */ }
-    #searchbox h3 {
-      margin: 8px; }
+    /* Clear floats */
+  }
+  #searchbox h3 {
+    margin: 8px;
+  }
 
   #search,
   #submit {
-    float: left; }
+    float: left;
+  }
 
   #search {
     padding: 5px 9px;
@@ -953,7 +1098,8 @@ you can add resource intensive styles.
     font: normal 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
     border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white;
+  }
 
   /* ----------------------- */
   #submit {
@@ -970,20 +1116,25 @@ you can add resource intensive styles.
     width: 140px;
     cursor: pointer;
     font: bold 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: #fff; }
+    color: #fff;
+  }
 
   #submit:hover {
     background-color: #95d788;
-    background-image: linear-gradient(#6cbb6b, #95d788); }
+    background-image: linear-gradient(#6cbb6b, #95d788);
+  }
 
   #submit:active {
     background: #95d788;
     outline: none;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  }
 
   #submit::-moz-focus-inner {
     border: 0;
-    /* Small centering fix for Firefox */ } }
+    /* Small centering fix for Firefox */
+  }
+}
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -993,7 +1144,8 @@ This is for the larger monitors and possibly full screen viewers.
   #menu img {
     margin-left: 13.5%;
     padding-top: 5px;
-    float: left; }
+    float: left;
+  }
 
   #map-container {
     width: 100%;
@@ -1002,11 +1154,13 @@ This is for the larger monitors and possibly full screen viewers.
     top: 0;
     left: 0;
     z-index: 0;
-    opacity: 0.3; }
+    opacity: 0.3;
+  }
 
   #map {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+  }
 
   #container {
     width: 100%;
@@ -1016,7 +1170,8 @@ This is for the larger monitors and possibly full screen viewers.
     top: 0;
     left: 0;
     margin: 0 auto;
-    padding-left: 10px; }
+    padding-left: 10px;
+  }
 
   /*#map {
     z-index: 0;
@@ -1030,14 +1185,17 @@ This is for the larger monitors and possibly full screen viewers.
     width: 270px;
     margin: 0 0 0 3px;
     overflow: none;
-    line-height: 25px; }
-    .gm-style-iw img {
-      width: 100%; }
+    line-height: 25px;
+  }
+  .gm-style-iw img {
+    width: 100%;
+  }
 
   /*div:ar*/
   #form {
     width: 970px;
-    float: left; }
+    float: left;
+  }
 
   #places {
     display: inherit;
@@ -1054,7 +1212,8 @@ This is for the larger monitors and possibly full screen viewers.
     overflow-y: scroll;
     margin-left: -5px;
     margin-top: 80px;
-    padding: 5px 8px 15px 12px; }
+    padding: 5px 8px 15px 12px;
+  }
 
   /*add.php*/
   #searchResult {
@@ -1062,13 +1221,16 @@ This is for the larger monitors and possibly full screen viewers.
     height: 220px;
     float: left;
     margin-right: 5px;
-    padding-left: 5px; }
-    #searchResult img {
-      width: 90%;
-      height: 120px; }
-    #searchResult h4 {
-      margin-top: 15px;
-      margin-bottom: 10px; }
+    padding-left: 5px;
+  }
+  #searchResult img {
+    width: 90%;
+    height: 120px;
+  }
+  #searchResult h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 
   /*-----------------*/
   #searchContent {
@@ -1082,21 +1244,26 @@ This is for the larger monitors and possibly full screen viewers.
     margin-top: 5px;
     padding: 5px 8px 15px 12px;
     float: left;
-    margin-right: 10px; }
-    #searchContent h4 {
-      margin-top: 5px;
-      color: #f9bcbe; }
-    #searchContent img {
-      margin-left: -2px; }
+    margin-right: 10px;
+  }
+  #searchContent h4 {
+    margin-top: 5px;
+    color: #f9bcbe;
+  }
+  #searchContent img {
+    margin-left: -2px;
+  }
 
   #searchContent1 {
     width: 855px;
-    margin: 0 auto; }
+    margin: 0 auto;
+  }
 
   .group:after {
     content: "";
     display: table;
-    clear: both; }
+    clear: both;
+  }
 
   /*föreslå en plats-sidan*/
   /*formulär*/
@@ -1111,15 +1278,18 @@ This is for the larger monitors and possibly full screen viewers.
     padding: 5px 0 15px 10px;
     margin: 5px 0 15px -5px;
     overflow: hidden;
-    /* Clear floats */ }
-    #addbox p {
-      padding-left: 5px;
-      padding-bottom: 2px;
-      padding-top: 7px;
-      color: #66bbc0;
-      font-size: 18px; }
-    #addbox h3 {
-      padding-left: 5px; }
+    /* Clear floats */
+  }
+  #addbox p {
+    padding-left: 5px;
+    padding-bottom: 2px;
+    padding-top: 7px;
+    color: #66bbc0;
+    font-size: 18px;
+  }
+  #addbox h3 {
+    padding-left: 5px;
+  }
 
   #insertText {
     padding: 5px 9px;
@@ -1129,7 +1299,8 @@ This is for the larger monitors and possibly full screen viewers.
     font: normal 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
     border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white;
+  }
 
   #submitAdd {
     background-color: #66BBC0;
@@ -1146,20 +1317,24 @@ This is for the larger monitors and possibly full screen viewers.
     height: 35px;
     cursor: pointer;
     font: bold 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: #fff; }
+    color: #fff;
+  }
 
   #submitAdd:hover {
     background-color: #95d788;
-    background-image: linear-gradient(#6cbb6b, #95d788); }
+    background-image: linear-gradient(#6cbb6b, #95d788);
+  }
 
   #submitAdd:active {
     background: #95d788;
     outline: none;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  }
 
   #submitAdd::-moz-focus-inner {
     border: 0;
-    /* Small centering fix for Firefox */ }
+    /* Small centering fix for Firefox */
+  }
 
   /*sökfältet i search.php*/
   #searchbox {
@@ -1174,13 +1349,16 @@ This is for the larger monitors and possibly full screen viewers.
     padding: 5px;
     margin: 80px 0 0 -3px;
     overflow: hidden;
-    /* Clear floats */ }
-    #searchbox h3 {
-      margin: 8px; }
+    /* Clear floats */
+  }
+  #searchbox h3 {
+    margin: 8px;
+  }
 
   #search,
   #submit {
-    float: left; }
+    float: left;
+  }
 
   #search {
     padding: 5px 9px;
@@ -1191,7 +1369,8 @@ This is for the larger monitors and possibly full screen viewers.
     font: normal 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande";
     background: #f1f1f1;
     border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white; }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 white;
+  }
 
   /* ----------------------- */
   #submit {
@@ -1208,17 +1387,22 @@ This is for the larger monitors and possibly full screen viewers.
     width: 140px;
     cursor: pointer;
     font: bold 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: #fff; }
+    color: #fff;
+  }
 
   #submit:hover {
     background-color: #95d788;
-    background-image: linear-gradient(#6cbb6b, #95d788); }
+    background-image: linear-gradient(#6cbb6b, #95d788);
+  }
 
   #submit:active {
     background: #95d788;
     outline: none;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset; }
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  }
 
   #submit::-moz-focus-inner {
     border: 0;
-    /* Small centering fix for Firefox */ } }
+    /* Small centering fix for Firefox */
+  }
+}
