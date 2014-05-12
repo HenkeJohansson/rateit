@@ -3,7 +3,7 @@
 
 
 //upprätta kontakt med databas
-include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
+include 'php/includes/connect.inc.php'; ?>
 <?php include "php/header.php"; ?>
 <div id="map-container"><div id="map" style="height:100%"></div></div>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
@@ -14,7 +14,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                 <div id="places">
             
             <?php 
-                    $sql_searchPlace = "SELECT * FROM places";
+                    $sql_searchPlace = "SELECT * FROM Places";
 					$result_searchPlace=$pdo->query($sql_searchPlace);
 					foreach( $result_searchPlace as $row){
 						//hämta data från place-tabellen
