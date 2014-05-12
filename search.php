@@ -21,7 +21,8 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                 </form>
 
 <?php
-        //echo "<div id='searchContent'>"; 
+        echo "<div id='searchContent1'>"; 
+        echo "<div id='clearfix'></div>";
 
 
             if (isset($_POST['searchtext'])) {
@@ -33,7 +34,8 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                 echo "</div>";
                 exit();
             }
-                
+                        echo "<div id='searchContent1'>"; 
+        echo "<div id='clearfix'></div>";
 				
 				$sql_searchPlace = "SELECT * FROM places WHERE places.placeName LIKE '%$search%'";
 					$result_searchPlace=$pdo->query($sql_searchPlace);
@@ -50,7 +52,8 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
                         $pic = $row['pic'];
                         $opening_hours = $row['opening_hours'];
                         $star = $row['star'];
-						echo "<div id='searchContent'>";
+						
+                        echo "<div id='searchContent' class='group'>";
                         echo "<h4> Sökord: <i> $search</i> </h4><br>";
 						echo "<h3>";
 						echo $placeName;
@@ -110,7 +113,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/rateit/php/includes/connect.inc.php'; ?>
 				
                     }
         
-        //echo "</div>";
+        echo "</div>";//#searchContent1
         
 ?>
 

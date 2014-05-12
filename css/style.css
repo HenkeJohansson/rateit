@@ -858,6 +858,15 @@ This is for the larger monitors and possibly full screen viewers.
     #searchContent img {
       margin-left: -2px; }
 
+  #searchContent1 {
+    width: 960px;
+    float: left; }
+
+  .group:after {
+    content: "";
+    display: table;
+    clear: both; }
+
   /*föreslå en plats-sidan*/
   /*formulär*/
   #addbox {
