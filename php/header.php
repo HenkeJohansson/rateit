@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="user-scalable=no">
+	<meta name="viewport" content="width=device-width">
 	<title>RateIt</title>
 </head>
 <body onload="load()">
