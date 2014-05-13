@@ -1,9 +1,18 @@
 var customIcons = {
 	Resturang: {
-		icon: ''
+		icon: 'pictures/pin_1.png'
 	},
 	Bar: {
-		icon: ''
+		icon: 'pictures/pin_1.png'
+	},
+	Klubb: {
+		icon: 'pictures/pin_1.png'
+	},
+	Restaurang: {
+		icon: 'pictures/pin_1.png'
+	},
+	Arbete: {
+		icon: 'pictures/pin_1.png'
 	}
 };
 
