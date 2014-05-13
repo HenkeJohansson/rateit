@@ -12,6 +12,7 @@ include 'php/includes/connect.inc.php'; ?>
 	<script src="js/main.js"></script>
     <div id="container">
                 <div id="places">
+                    <h3>Platser som redan finns</h3>
             
             <?php 
                     $sql_searchPlace = "SELECT * FROM Places";

@@ -20,11 +20,16 @@ media.addListener(function(data) {
 
 function swipeMenu() {
 	// Sätter bredden på #categories beroende på fönstrets bredd
-	if (window.innerWidth > '550') {
-		menuSize = '20%';
-		menuPosition = '-20%';
-		categories.style.width = '20%';
-		categories.style.right = '-20%';
+	if (window.innerWidth > '768') {
+		menuSize = '30%';
+		menuPosition = '-30%';
+		categories.style.width = '30%';
+		categories.style.right = '-30%';
+	} else if(window.innerWidth > '1030') {
+		menuSize = '25%';
+		menuPosition = '-25%';
+		categories.style.width = '25%';
+		categories.style.right = '-25%';
 	} else {
 		menuSize = '-100%';
 		menuPosition = '-100%';
